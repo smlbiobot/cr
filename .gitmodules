@@ -1,0 +1,3 @@
+[submodule "scripts/cr-sc-dump"]
+	path = scripts/cr-sc-dump
+	url = https://github.com/123456abcdef/cr-sc-dump.git
