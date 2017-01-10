@@ -1,0 +1,3 @@
+"Name","Efficiency","NumberOfJumps","MinBuffChance","MaxBuffChance","Buff","DamageEffect","BuffTime"
+"String","int","int","int","int","String","String","int"
+"Physical",100,,,,,"Damage",

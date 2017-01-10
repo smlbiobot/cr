@@ -1,0 +1,30 @@
+"Name","TID","IconSWF","CollectEffect","IconExportName","PremiumCurrency","CapFullTID","TextRed","TextGreen","TextBlue","Cap","IconFile","ShopIcon"
+"String","String","String","String","String","Boolean","String","int","int","int","int","string","string"
+"Diamonds","TID_DIAMONDS","sc/ui.sc",,"icon_gems","TRUE",,102,255,102,,"gems","icon_gems"
+"Gold","TID_GOLD","sc/ui.sc","Collect Gold","icon_gold",,"TID_GOLD_CAP_FULL",255,240,72,1000000,"gold","icon_gold"
+"ChestOrderIndex",,,,,,,,,,,,
+"ChestCount",,,,,,,,,,,,
+"StarCount",,,,,,,,,,,,
+"FreeGold","TID_GOLD","sc/ui.sc","Collect Gold","icon_gold",,,255,240,72,1000000,"gold","icon_gold"
+"MaxScore",,,,,,,,,,,,
+"ThreeCrownWins",,,,,,,,,,,,
+"CardCount",,,,,,,,,,,,
+"FavouriteSpell",,,,,,,,,,,,
+"DonationsTotal",,,,,,,,,,,,
+"LastTournamentId",,,,,,,,,,,,
+"SuperChestIndex",,,,,,,,,,,,
+"BattleRewardGold",,,,,,,,,,,,
+"BattleRewardCount",,,,,,,,,,,,
+"LegendaryChestIndex",,,,,,,,,,,,
+"ShopDayCount",,,,,,,,,,,,
+"SpecialOfferLegendaryIndex",,,,,,,,,,,,
+"SpecialOfferEpicIndex",,,,,,,,,,,,
+"SpecialOfferStarterPackIndex",,,,,,,,,,,,
+"SurvivalMaxWins",,,,,,,,,,,,
+"SurvivalCardsWon",,,,,,,,,,,,
+"EpicChestIndex",,,,,,,,,,,,
+"RefundAchievementCreateGameroom",,,,,,,,,,,,
+"ProductRedPurchaseCount",,,,,,,,,,,,
+"BlindDeckSeed",,,,,,,,,,,,
+"BlindDeckIndex",,,,,,,,,,,,
+"MaxArena",,,,,,,,,,,,

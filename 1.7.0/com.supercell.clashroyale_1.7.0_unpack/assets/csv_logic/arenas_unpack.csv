@@ -1,0 +1,13 @@
+"Name","TID","SubtitleTID","Arena","IsInUse","TrainingCamp","TrophyLimit","DemoteTrophyLimit","ChestRewardMultiplier","ChestShopPriceMultiplier","RequestSize","MaxDonationCountCommon","MaxDonationCountRare","MaxDonationCountEpic","IconSWF","IconExportName","MatchmakingMinTrophyDelta","MatchmakingMaxTrophyDelta","MatchmakingMaxSeconds","PvpLocation","DailyDonationCapacityLimit","BattleRewardGold","ReleaseDate"
+"string","string","string","Int","boolean","boolean","int","int","int","int","int","int","int","int","string","string","int","int","int","String","int","int","String"
+"TrainingCamp","TID_ARENA_TRAINING_CAMP","TID_INFO_ARENA_TRAINING_CAMP",0,"true","TRUE",0,0,100,100,10,1,1,1,"sc/ui_arena.sc","arena_00",0,100,60,"TrainingCamp",60,5,
+"Arena1","TID_ARENA1","TID_INFO_ARENA1",1,"true",,0,0,100,100,10,1,1,1,"sc/ui_arena.sc","arena_01",20,100,60,"PvP_goblin",60,5,
+"Arena2","TID_ARENA2","TID_INFO_ARENA2",2,"true",,400,350,135,130,10,2,1,1,"sc/ui_arena.sc","arena_02",40,100,60,"PvP_bone",60,7,
+"Arena3","TID_ARENA3","TID_INFO_ARENA3",3,"true",,800,750,170,160,10,2,1,1,"sc/ui_arena.sc","arena_03",40,100,60,"PvP_barbarian",60,9,
+"Arena4","TID_ARENA4","TID_INFO_ARENA4",4,"true",,1100,1050,200,180,20,4,1,1,"sc/ui_arena.sc","arena_04",40,100,60,"PvP_dark",120,11,
+"Arena5","TID_ARENA5","TID_INFO_ARENA5",5,"true",,1400,1350,230,200,20,4,1,1,"sc/ui_arena.sc","arena_05",40,100,60,"PvP_spell",120,12,
+"Arena6","TID_ARENA6","TID_INFO_ARENA6",6,"true",,1700,1650,260,220,20,4,1,1,"sc/ui_arena.sc","arena_06",40,100,60,"PvP_builder",120,14,
+"Arena_L","TID_ARENA_L","TID_INFO_ARENA_L",10,"true",,3000,2950,380,300,40,8,1,1,"sc/ui_arena.sc","arena_legendary",40,200,60,"PvP_legendary",240,20,
+"Arena7","TID_ARENA7","TID_INFO_ARENA7",7,"true",,2000,1950,290,240,30,6,1,1,"sc/ui_arena.sc","arena_07",40,100,60,"PvP_royal",180,15,
+"Arena8","TID_ARENA8","TID_INFO_ARENA8",8,"true",,2300,2250,320,260,30,6,1,1,"sc/ui_arena.sc","arena_08",40,100,60,"PvP_ice",200,16,
+"Arena9","TID_ARENA9","TID_INFO_ARENA9",9,"true",,2600,2550,350,280,30,6,1,1,"sc/ui_arena.sc","arena_09",40,100,60,"PvP_jungle",220,18,"2017-01-13"
