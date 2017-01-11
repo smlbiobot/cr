@@ -20,7 +20,7 @@ QuickBMS is used to decrypt the CSV files.
 
 ## Fan Kit
 
-The official Clash Royale Fan Kit is included here for easy access It is somewhat outdated as it was released in August, 2016. 
+The official Clash Royale Fan Kit is included here for easy access. It is somewhat outdated as it was released in August, 2016. 
 
 * Official download: http://supr.cl/RoyaleFanKit
 * Related forum post: https://forum.supercell.com/showthread.php/1003743-Clash-Royale-Fan-Kit
