@@ -22,4 +22,4 @@ Related forum post: https://forum.supercell.com/showthread.php/1003743-Clash-Roy
 
 ## Card Generation
 
-By using the card graphics extracted from the APK, I have created a couple of Photoshop files which accept CSV datasets to output card graphics which have the same dimension. The source and output can be found in ./card-gen
+A couple of Photoshop files were created to generate card graphics with the same dimension. This was achieved by using the dataset function paired with CSV data. These can be found in ./card-gen
