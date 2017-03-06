@@ -82,8 +82,8 @@ PATHS = (
     "ui_spells_out")
 
 
-# Animated GIF
-OUT_FOLDER = os.path.join(".", "out")
+# Stacked image composite
+OUT_FOLDER = os.path.join(".", "out-stack-rev")
 
 for p in PATHS:
     folder = os.path.join(
@@ -96,10 +96,22 @@ for p in PATHS:
         os.path.join(folder, f) for f in files]
     images = [
         Image.open(f) for f in file_paths]
-    out_file = os.path.join(OUT_FOLDER, "{}.gif".format(p))
-    if images:
-        image = images[0]
-        image.save(
-            out_file, save_all=True, append_images=images[1:], duration=10)
-        print(out_file)
+
+    image = None
+    for i, img in enumerate(images):
+        if i == 0:
+            image = img
+        else:
+            if img:
+                # image = Image.alpha_composite(image, img)
+                image = Image.alpha_composite(img, image)
+
+    out_file = os.path.join(OUT_FOLDER, "{}.png".format(p))
+    if image:
+        image.save(out_file)
+    # if images:
+    #     image = images[0]
+    #     image.save(
+    #         out_file, save_all=True, append_images=images[1:], duration=10)
+    print(out_file)
     # print(folder)
