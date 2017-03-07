@@ -38,4 +38,8 @@ A couple of Photoshop files were created to generate card graphics with the same
 
 * Folder: ./card-gen
 
+## Fun stuff
+
+Python playground scripts just for fun.
+
 
