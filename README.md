@@ -12,6 +12,12 @@ CR-SC-Dump is used to decrypt sc/*_tex.sc files which output image sprites of th
  
 * Source: https://github.com/123456abcdef/cr-sc-dump
 
+Additionally, sc_decode is used to turn the sprites into useful frames.
+
+* Source: https://github.com/umop-aplsdn/sc_decode
+
+There is a step-by-step guide posted here if interested: https://github.com/umop-aplsdn/sc_decode/wiki/Getting-started
+
 ### CSV files decryption
 
 QuickBMS is used to decrypt the CSV files.
