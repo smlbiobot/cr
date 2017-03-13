@@ -4,7 +4,7 @@
  
 Assets were extracted from the Clash Royale APK using publicly available scripts.
 
-* Latest version: 1.7.0 (released on December 15th, 2016)
+* Latest version: 1.8.0 (released on March 13, 2017)
  
 ### Image assets (*.SC)
 
@@ -16,6 +16,12 @@ Additionally, sc_decode is used to turn the sprites into useful frames.
 
 * Source: https://github.com/umop-aplsdn/sc_decode
 
+### CSV files decryption
+
+QuickBMS is used to decrypt the CSV files.
+
+* Source: http://aluigi.altervista.org/quickbms.htm 
+
 ### Step by Step
 
 1. Rename apk to zip and expand to folder with any zip file handler.
@@ -23,13 +29,6 @@ Additionally, sc_decode is used to turn the sprites into useful frames.
 3. Use QuickBMS and the Clash Royale BMS script to decrypt remaining sc files in ./assets/sc folder. 
 4. Run decoder_csv.py to unpack csv files in ./assets/csv_client and ./assets/csv_logic
 5. Copy sc_decode.py to ./assets/sc/ folder and change that folder as your folder folder. Run `find . -not -name '*tex' -not -name '*.png' -not -name '*.py' -exec python3 ./sc_decode.py -s {} \;` in ./assets/sc folder
-
-
-### CSV files decryption
-
-QuickBMS is used to decrypt the CSV files.
-
-* Source: http://aluigi.altervista.org/quickbms.htm 
 
 ## Fan Kit
 
