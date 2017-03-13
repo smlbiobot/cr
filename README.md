@@ -16,7 +16,15 @@ Additionally, sc_decode is used to turn the sprites into useful frames.
 
 * Source: https://github.com/umop-aplsdn/sc_decode
 
-There is a step-by-step guide posted here if interested: https://github.com/umop-aplsdn/sc_decode/wiki/Getting-started
+### Step by Step
+
+1. Rename apk to zip and expand to folder with any zip file handler.
+2. Use dumpsc.py to extract *_tex.sc files as PNGs. Keep those PNGs inside the ./assets/sc folder for use later.
+3. Use QuickBMS and the Clash Royale BMS script to decrypt remaining sc files in ./assets/sc folder. 
+4. Run decoder_csv.py to unpack csv files in ./assets/csv_client and ./assets/csv_logic
+5. 
+
+Reference: https://github.com/umop-aplsdn/sc_decode/wiki/Getting-started
 
 ### CSV files decryption
 
