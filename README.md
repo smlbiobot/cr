@@ -22,9 +22,8 @@ Additionally, sc_decode is used to turn the sprites into useful frames.
 2. Use dumpsc.py to extract *_tex.sc files as PNGs. Keep those PNGs inside the ./assets/sc folder for use later.
 3. Use QuickBMS and the Clash Royale BMS script to decrypt remaining sc files in ./assets/sc folder. 
 4. Run decoder_csv.py to unpack csv files in ./assets/csv_client and ./assets/csv_logic
-5. 
+5. Copy sc_decode.py to ./assets/sc/ folder and change that folder as your folder folder. Run `find . -not -name '*tex' -not -name '*.png' -not -name '*.py' -exec python3 ./sc_decode.py -s {} \;` in ./assets/sc folder
 
-Reference: https://github.com/umop-aplsdn/sc_decode/wiki/Getting-started
 
 ### CSV files decryption
 
