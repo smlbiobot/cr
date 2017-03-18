@@ -25,12 +25,16 @@ QuickBMS is used to decrypt the CSV files.
 ### Step by Step
 
 1. Rename apk to zip and expand to folder with any zip file handler.
+
 2. Copy dumpsc.py into ./assets/sc folder and run `find . -name '*_tex.sc' | xargs python ./dumpsc.py` This will decrypt texture files as PNG inside the ./assets/sc folder. Keep them for use later. You may remove dumpsc.py from the folder after it has done its job.
-3. Use QuickBMS and the Clash Royale BMS script to decrypt remaining sc files in ./assets/sc folder. `find . -not -name '*_tex.sc' -name '*.sc' -exec quickbms ./clash_royale.bms {} \;`
-4. Run decoder_csv.py to unpack csv files in ./assets/csv_client and ./assets/
+
+3. Run `find . -not -name '*_tex.sc' -name '*.sc' -exec quickbms ./clash_royale.bms {} \;` to use QuickBMS and the Clash Royale BMS script to decrypt remaining sc files in ./assets/sc folder.
+
+4. Run `./decoder_csv.py .` to unpack csv files in ./assets/csv_client and ./assets/csv_logic 
+
 5. With all the sc files decoded, you can now safely remove them. `find  -name '*.sc' -exec rm {} \;`
-csv_logic `./decoder_csv.py .`
-6. Copy sc_decode.py to ./assets/sc/ folder and change that folder as your folder folder. Run `find . -type f -not -name '*tex' -not -name '*.png' -not -name '*.py' -exec python3 ./sc_decode.py -s {} \;` in ./assets/sc folder
+
+6. Copy sc_decode.py to ./assets/sc/ folder and change that as your working folder. Run `find . -type f -not -name '*tex' -not -name '*.png' -not -name '*.py' -exec python3 ./sc_decode.py -s {} \;` in ./assets/sc folder
 
 ## Fan Kit
 
