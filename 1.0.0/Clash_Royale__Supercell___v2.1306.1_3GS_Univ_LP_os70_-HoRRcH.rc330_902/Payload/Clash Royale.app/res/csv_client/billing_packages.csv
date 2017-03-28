@@ -1,0 +1,8 @@
+Name,TID,Disabled,ExistsApple,ExistsAndroid,Diamonds,USD,Order,IconFile
+String,String,boolean,boolean,boolean,int,int,int,string
+com.supercell.scroll.gempack0,TID_DIAMOND_PACK_1,,TRUE,TRUE,500,499,1,shop_gems02
+com.supercell.scroll.gempack1,TID_DIAMOND_PACK_2,,TRUE,TRUE,1200,999,2,shop_gems03
+com.supercell.scroll.gempack2,TID_DIAMOND_PACK_3,,TRUE,TRUE,2500,1999,3,shop_gems04
+com.supercell.scroll.gempack3,TID_DIAMOND_PACK_4,,TRUE,TRUE,6500,4999,4,shop_gems05
+com.supercell.scroll.gempack4,TID_DIAMOND_PACK_5,,TRUE,TRUE,14000,9999,5,shop_gems06
+com.supercell.scroll.gempack5,TID_DIAMOND_PACK_0,,TRUE,TRUE,80,99,0,shop_gems01

@@ -1,0 +1,3 @@
+"Name","ServerURL","Port","OfflineMode","AssetURL","SecurityServiceURL"
+"String","String","String","Boolean","String","String"
+"Settings","localhost",9339,"true","http://asdf","http://asdf"

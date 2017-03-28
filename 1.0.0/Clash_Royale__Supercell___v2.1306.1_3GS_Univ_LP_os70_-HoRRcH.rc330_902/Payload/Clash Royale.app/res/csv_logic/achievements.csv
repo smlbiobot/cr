@@ -1,0 +1,13 @@
+"Name","Level","TID","InfoTID","Action","ActionCount","ExpReward","DiamondReward","Hero","SortIndex","Hidden"
+"String","int","String","String","String","int","int","int","String","int","Boolean"
+"com.supercell.scroll.teamplayer",2,"TID_ACHIEVEMENT_TITLE_CLAN","TID_ACHIEVEMENT_INFO_CLAN","jointeam",1,10,100,,1,
+"com.supercell.scroll.donate",0,"TID_ACHIEVEMENT_TITLE_DONATE","TID_ACHIEVEMENT_INFO_DONATE","donate",25,5,3,,2,
+"com.supercell.scroll.donate2",1,"TID_ACHIEVEMENT_TITLE_DONATE","TID_ACHIEVEMENT_INFO_DONATE","donate",250,10,5,,3,
+"com.supercell.scroll.donate3",2,"TID_ACHIEVEMENT_TITLE_DONATE","TID_ACHIEVEMENT_INFO_DONATE","donate",2500,20,10,,4,
+"com.supercell.scroll.reacharena",0,"TID_ACHIEVEMENT_TITLE_REACHARENA","TID_ACHIEVEMENT_INFO_REACHARENA","reacharena",2,5,3,,5,
+"com.supercell.scroll.reacharena2",1,"TID_ACHIEVEMENT_TITLE_REACHARENA","TID_ACHIEVEMENT_INFO_REACHARENA","reacharena",4,10,5,,6,
+"com.supercell.scroll.reacharena3",2,"TID_ACHIEVEMENT_TITLE_REACHARENA","TID_ACHIEVEMENT_INFO_REACHARENA","reacharena",6,20,10,,7,
+"com.supercell.scroll.cards",0,"TID_ACHIEVEMENT_TITLE_CARDS","TID_ACHIEVEMENT_INFO_CARDS","findcard",20,5,3,,8,
+"com.supercell.scroll.cards2",1,"TID_ACHIEVEMENT_TITLE_CARDS","TID_ACHIEVEMENT_INFO_CARDS","findcard",30,10,5,,9,
+"com.supercell.scroll.cards3",2,"TID_ACHIEVEMENT_TITLE_CARDS","TID_ACHIEVEMENT_INFO_CARDS","findcard",40,20,10,,10,
+"com.supercell.scroll.watchtv",2,"TID_ACHIEVEMENT_TITLE_TV","TID_ACHIEVEMENT_INFO_TV","watchtv",1,5,5,,11,

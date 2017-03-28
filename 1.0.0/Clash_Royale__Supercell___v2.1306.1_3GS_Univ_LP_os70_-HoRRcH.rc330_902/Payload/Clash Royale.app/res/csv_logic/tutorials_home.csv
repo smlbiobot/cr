@@ -1,0 +1,4 @@
+"Name","Location","NPC","TID","ButtonTID","FinishRequirement","WaitTimeMS","FileName","PopupCorner","PopupExportName","BubbleExportName","Sound","Darkening","BubbleObject","OverlayExportName","SpellDragExportName","SpellToCast","TutorialSpell","SpellTileX","SpellTileY","DisableSpells","HideCombatUI","DisableTroopMovement","DisableLeaderMovement","DisableSpawnPoints","DisableOpponentSpells","PauseCombat","Dependency","Priority","Taunt","HighlightTargetsOnManaFull","DisableBattleStartScreen","NpcMatchesPlayed","DisableBattleMenu"
+"String","String","String","String","String","String","int","String","int","String","String","String","boolean","String","String","String","String","String","int","int","boolean","boolean","boolean","boolean","boolean","boolean","boolean","String","int","String","boolean","boolean","int","boolean"
+"UpgradeSpell",,,,,"FuseSpell",,,,,,,,,,,,,,,,,,,,,,,0,,,,,"true"
+"AskName",,,,,"EnterName",,,,,,,,,,,,,,,,,,,,,,,1,,,,6,

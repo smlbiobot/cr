@@ -1,0 +1,3 @@
+"Name","FileName","BlueExportName","RedExportName","BlueTopExportName","RedTopExportName","HatchDuration","Hitpoints","CharacterStartingBuff","CharacterStartingBuffTime","Homespawn","IgnoreAggro","CollisionRadius","Effect","DeathEffect","ShadowScale","ShadowX","ShadowY","ShadowSkew"
+"String","String","String","String","String","String","int","int","String","int","boolean","boolean","int","String","String","int","int","int","int"
+"Egg","sc/characters.sc","order_spawning_orb","order_spawning_orb",,,3000,1,,,,,350,,,100,,10,35

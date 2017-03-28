@@ -1,0 +1,7 @@
+"Name","Efficiency","NumberOfJumps","MinBuffChance","MaxBuffChance","BankDamage","Buff","DamageEffect","BuffTime","TID"
+"String","int","int","int","int","int","String","String","int","String"
+"Physical",100,,,,,,"Damage",,"TID_DAMAGE_TYPE_PHYSICAL"
+"Fire",100,,,,,,"Damage",,"TID_DAMAGE_TYPE_FIRE"
+"Poison",100,,,,25,"Poisoned","Damage",,"TID_DAMAGE_TYPE_POISON"
+"Electrical",100,4,,,,,"Damage",,"TID_DAMAGE_TYPE_ELECTRICAL"
+"Cold",100,,100,100,,"Freeze","Damage",2000,"TID_DAMAGE_TYPE_COLD"

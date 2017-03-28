@@ -1,0 +1,5 @@
+"Name","FileName","ExportName","FirstWait","Characters","Wait","DontLoop"
+"string","string","string","int","String","int","boolean"
+"SpawnPoint",,,1,"Barbarian",1300,
+,,,,"Barbarian",1300,
+,,,,"Barbarian",7300,

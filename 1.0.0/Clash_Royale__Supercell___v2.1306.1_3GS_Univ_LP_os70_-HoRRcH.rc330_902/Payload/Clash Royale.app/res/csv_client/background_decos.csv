@@ -1,0 +1,8 @@
+"Name","FileName","ExportName","Layer"
+"string","string","string","String"
+"Grassland_background1","sc/level.sc","Grassland_background1","Background2"
+"Grassland_river_bridge1","sc/level.sc","Grassland_river_bridge1","Background3"
+"Grassland_river_horizontal_left","sc/level.sc","Grassland_river_horizontal_left","Background1"
+"Grassland_river_horizontal_right","sc/level.sc","Grassland_river_horizontal_right","Background1"
+"Grassland_river_horizontal","sc/level.sc","grassland_river_horizontal","Background1"
+"Arena_deco_ladder_1","sc/level.sc","Arena_deco_ladder_1","Background3"

@@ -1,0 +1,6 @@
+"Name","LifeDuration","LifeDurationIncreasePerLevel","Radius","LoopingEffect","OneShotEffect","ScaledEffect","HitEffect","Pushback","MaximumTargets","HitSpeed","Damage","ReducedTowerDamage","HitBiggestTargets","DamageType","Healing","Buff","BuffTime","BuffTimeIncreasePerLevel","BuffNumber","OnlyEnemies","OnlyOwnTroops","Projectile","HitsGround","HitsAir","ProjectileStartHeight","ProjectilesToCenter"
+"string","int","int","int","string","string","string","string","int","int","int","int","boolean","boolean","string","int","string","int","int","int","boolean","boolean","string","boolean","boolean","int","boolean"
+"Rage",9000,600,5000,"Spell_rage_loop","Spell_rage_effect","Spell_rage_ground",,,,300,,,,,,"Rage",500,,1,,"TRUE",,"TRUE","TRUE",,
+"Freeze",6000,400,4000,"Spell_freeze_loop",,"Spell_freeze_ground",,,,,,,,,,"Freeze",6000,400,1,"TRUE",,,"TRUE","TRUE",,
+"Lightning",1500,,3000,,,,,,,460,,,"TRUE",,,,,,,"TRUE",,"LighningSpell","TRUE","TRUE",10,
+"Zap",1,,2500,,"Spell_zap_effect",,,,,,90,"TRUE",,,,,,,,"TRUE",,,"TRUE","TRUE",,

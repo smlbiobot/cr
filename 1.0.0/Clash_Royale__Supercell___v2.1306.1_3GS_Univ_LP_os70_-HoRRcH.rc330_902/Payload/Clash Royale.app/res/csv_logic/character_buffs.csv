@@ -1,0 +1,15 @@
+"Name","IconFileName","IconExportName","ChangeControl","DamagePerSecond","DamageType","DamageReduction","HealReduction","ImmuneToAntiMagic","HitSpeedMultiplier","SpeedMultiplier","SpawnSpeedMultiplier","NegatesBuffs","ImmunityToBuffs","Invisible","RemoveOnAttack","TimeToEmptyBankedDamage","RemoveOnHeal","DamageMultiplier","Panic","Effect","FilterFile","FilterExportName","SizeMultiplier","StaticTarget","HitsToDestroy","DisableRadius","DisabledCooldown","IgnorePushBack","MarkEffect"
+"String","String","String","Boolean","int","String","int","int","Boolean","int","int","int","String","String","Boolean","Boolean","int","Boolean","int","boolean","String","String","String","int","boolean","int","int","int","boolean","String"
+"Rage",,,,,,,,,135,135,135,,,,,,,,,"Spell_rage_hit_effect","sc/effects.sc","filter_rage",,,,,,,"Healing"
+"Flaming","sc/ui.sc","buff_icon_small_fire",,25,"Fire",,,"TRUE",,,,"Freeze","Freeze",,,,,,,"Burner","sc/level.sc","filter_burn",,,,,,,
+"Freeze",,,,,,,,"TRUE",-100,-100,-100,"Flaming","Flaming",,,,,,,,"sc/level.sc","filter_cold",,,,,,,
+"Poisoned",,,,,"Poison",,,"TRUE",,,,,,,,7000,"TRUE",,,"PoisonSteam","sc/level.sc","filter_poison",,,,,,,
+"Smoke","sc/ui.sc","buff_icon_small_smoke",,,,,,"TRUE",-100,-50,,,,"TRUE",,,,,,,"sc/level.sc","filter_cold",,,,,,,
+"Supersize","sc/ui.sc",,,,,,,,,,,"Poisoned",,,,,,,,"Growth",,,150,,,,,,"Healing"
+"Root","sc/ui.sc",,,,,,,,,-100,,,,,,,,,,"Root",,,,"true",,,,"true","Healing"
+"Stun","sc/ui.sc",,,,,,,,,-100,,,,,,,,,,"Stun",,,,"true",,,,,
+"Panic","sc/ui.sc","buff_icon_small_mindcotroll",,,,,,,,,,,,,,,,,"true",,,,,,,,,,"Healing"
+"Maul",,,,,,,,,-50,-50,,,,,,,"TRUE",,,,,,,,,,,,
+"Steroid","sc/ui.sc","buff_icon_small_bloodrage",,,,,100,,140,130,,,,,,,,,,,,,,,,,,,"Healing"
+"SummonerBuff",,,,,,,90,"TRUE",,,,,,,,,,,,,,,,,,,,,
+,,,,,,,90,,,,,,,,,,,,,,,,,,,,,,
