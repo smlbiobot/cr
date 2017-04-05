@@ -1,0 +1,6 @@
+{
+	"crdata": "./clashroyale.json",
+	"src_dir": "./src",
+	"spells_dir": "./spells",
+	"output_dir": "./card-png"
+}
