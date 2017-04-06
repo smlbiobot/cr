@@ -6,7 +6,7 @@ from PIL import Image
 # Stacked image composite
 OUT_FOLDER = os.path.join(".", "out-stack")
 SC_FOLDER = os.path.join(
-    "..", "1.8.2", "com.supercell.clashroyale-1.8.2-decoded",
+    "..", "apk", "1.8.2", "com.supercell.clashroyale-1.8.2-decoded",
     "assets", "sc")
 
 for root, dirs, files in os.walk(SC_FOLDER):

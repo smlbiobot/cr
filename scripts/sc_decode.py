@@ -17,21 +17,21 @@ def region_rotation(region):
     sumSheet = 0
     sumShape = 0
     for z in range(region['NumPoints']):
-        sumSheet += ((region['SheetPoints'][(z+1)%(region['NumPoints'])]['x'] - region['SheetPoints'][z]['x']) * 
+        sumSheet += ((region['SheetPoints'][(z+1)%(region['NumPoints'])]['x'] - region['SheetPoints'][z]['x']) *
                            (region['SheetPoints'][(z+1)%(region['NumPoints'])]['y'] + region['SheetPoints'][z]['y']))
-        sumShape += ((region['ShapePoints'][(z+1)%(region['NumPoints'])]['x'] - region['ShapePoints'][z]['x']) * 
+        sumShape += ((region['ShapePoints'][(z+1)%(region['NumPoints'])]['x'] - region['ShapePoints'][z]['x']) *
                            (region['ShapePoints'][(z+1)%(region['NumPoints'])]['y'] + region['ShapePoints'][z]['y']))
-    
+
     sheetOrientation = -1 if (sumSheet<0) else 1
     shapeOrientation = -1 if (sumShape<0) else 1
-    
+
     region['Mirroring'] = 0 if (shapeOrientation == sheetOrientation) else 1
-    
+
     if (region['Mirroring'] == 1):
         #what, just horizontally mirror the points?
         for x in range(region['NumPoints']):
             region['ShapePoints'][x]['x'] *= -1
-    
+
     #define region rotation
     #pX, qX mean "where in X is point 1, according to point 0"
     #pY, qY mean "where in Y is point 1, according to point 0"
@@ -63,9 +63,9 @@ def region_rotation(region):
         qy = 'L'
     else:
         qy = 'S'
-    
+
     #now, define rotation
-    #short of listing all 32 outcomes (like MM-MM, MM-ML, MM-MS, etc.), this monstrous if block seems a better way to do this            
+    #short of listing all 32 outcomes (like MM-MM, MM-ML, MM-MS, etc.), this monstrous if block seems a better way to do this
     #"HIC SUNT DRACONES"
     rotation = 0
     if (px==qx and py==qy):
@@ -98,12 +98,12 @@ def region_rotation(region):
             rotation = 90
         elif(py!=qy):
             rotation = 270
-    
+
     if (sheetOrientation == -1 and (rotation == 90 or rotation == 270)):
         rotation = (rotation + 180)%360
-    
+
     region['Rotation'] = rotation
-    
+
     return region
 
 
@@ -113,27 +113,27 @@ def path_out(filein):
     if not (os.path.exists(pathout)):
         os.makedirs(pathout)
     return pathout
-    
 
-    
+
+
 #dumps all sprites on the same folder
-def sprite_dump(filein):    
+def sprite_dump(filein):
 
     pathout = path_out(filein)
-    print('dumping {} sprites'.format(filein))    
+    print('dumping {} sprites'.format(filein))
     with open(filein,  'rb') as fin:
         i = 0
         data = fin.read()
         #read header: number of blocks
         #just sprites and spritesheets, skip the rest
-        totalsprites,   = struct.unpack('<H',  bytes(data[i:i+2]))        
+        totalsprites,   = struct.unpack('<H',  bytes(data[i:i+2]))
         i += 4
-        totalsheets,  = struct.unpack('<H',  bytes(data[i:i+2]))        
+        totalsheets,  = struct.unpack('<H',  bytes(data[i:i+2]))
         i += 13
         totalstrings,  = struct.unpack('<H',  bytes(data[i:i+2]))
         i += 2
         i += (totalstrings * 2)
-        for x in range (totalstrings):            
+        for x in range (totalstrings):
             stringlen,  = struct.unpack('<B',  bytes(data[i:i+1]))
             i += (stringlen + 1)
         tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
@@ -142,12 +142,12 @@ def sprite_dump(filein):
         tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
         if (tmpvar  == 0x1A):
             i += 5
-        
+
         #
         #first: gather all data from file
         #
-        
-        #sprite sheet blocks, either 0x01 or 0x18        
+
+        #sprite sheet blocks, either 0x01 or 0x18
         sheetdata = [{'x':0,  'y':0} for x in range(totalsheets)]
         for x in range(totalsheets):
             tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
@@ -155,15 +155,15 @@ def sprite_dump(filein):
                 #skip header, length (it's 5) and pixel format
                 i += 6
                 #width
-                sheetdata[x]['x'],  = struct.unpack('<H',  bytes(data[i:i+2]))                
+                sheetdata[x]['x'],  = struct.unpack('<H',  bytes(data[i:i+2]))
                 i += 2
                 #height
-                sheetdata[x]['y'],  = struct.unpack('<H',  bytes(data[i:i+2]))                
+                sheetdata[x]['y'],  = struct.unpack('<H',  bytes(data[i:i+2]))
                 i += 2
             else:
                 print('strange, this byte should be either 0x01 or 0x18, but I got {} at position {}'.format(tmpvar,  i))
-                return                
-        
+                return
+
         #sprite data blocks, 0x12
         spritedata = [{'ID':0,  'TotalRegions':0,  'Regions':[]} for x in range(totalsprites)]
         for x in range(totalsprites):
@@ -171,13 +171,13 @@ def sprite_dump(filein):
             if (tmpvar == 0x12):
                 #skip header and block length
                 i += 5
-                spritedata[x]['ID'],  = struct.unpack('<H',  bytes(data[i:i+2]))                
+                spritedata[x]['ID'],  = struct.unpack('<H',  bytes(data[i:i+2]))
                 i+=2
-                spritedata[x]['TotalRegions'],  = struct.unpack('<H',  bytes(data[i:i+2]))                
+                spritedata[x]['TotalRegions'],  = struct.unpack('<H',  bytes(data[i:i+2]))
                 i+=4 #skip total points, it's pointless!
-                
-                spritedata[x]['Regions'] = [{'SheetID':0,  'NumPoints':0, 'Rotation':0, 'Mirroring':0, 'ShapePoints':[],  'SheetPoints':[],  
-                                                         'SpriteWidth':0,  'SpriteHeight':0,  'RegionZeroX':0,  'RegionZeroY':0, 
+
+                spritedata[x]['Regions'] = [{'SheetID':0,  'NumPoints':0, 'Rotation':0, 'Mirroring':0, 'ShapePoints':[],  'SheetPoints':[],
+                                                         'SpriteWidth':0,  'SpriteHeight':0,  'RegionZeroX':0,  'RegionZeroY':0,
                                                          'Top':-32767,  'Left':32767,  'Bottom':32767,  'Right':-32767} for y in range(spritedata[x]['TotalRegions'])]
                 for y in range(spritedata[x]['TotalRegions']):
                     tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
@@ -194,17 +194,17 @@ def sprite_dump(filein):
                             spritedata[x]['Regions'][y]['ShapePoints'][z]['x'],  = struct.unpack('<i',  bytes(data[i:i+4]))
                             i += 4
                             spritedata[x]['Regions'][y]['ShapePoints'][z]['y'],  = struct.unpack('<i',  bytes(data[i:i+4]))
-                            i += 4                        
+                            i += 4
                         for z in range(spritedata[x]['Regions'][y]['NumPoints']):
-                            spritedata[x]['Regions'][y]['SheetPoints'][z]['x'],  = struct.unpack('<H',  bytes(data[i:i+2]))                            
+                            spritedata[x]['Regions'][y]['SheetPoints'][z]['x'],  = struct.unpack('<H',  bytes(data[i:i+2]))
                             i += 2
                             spritedata[x]['Regions'][y]['SheetPoints'][z]['y'],  = struct.unpack('<H',  bytes(data[i:i+2]))
                             i += 2
-                            
+
                             #denormalizing coordinates
-                            spritedata[x]['Regions'][y]['SheetPoints'][z]['x'] = int(round(spritedata[x]['Regions'][y]['SheetPoints'][z]['x'] * 
+                            spritedata[x]['Regions'][y]['SheetPoints'][z]['x'] = int(round(spritedata[x]['Regions'][y]['SheetPoints'][z]['x'] *
                                                                                                           (sheetdata[spritedata[x]['Regions'][y]['SheetID']]['x']/65535)))
-                            spritedata[x]['Regions'][y]['SheetPoints'][z]['y'] = int(round(spritedata[x]['Regions'][y]['SheetPoints'][z]['y'] * 
+                            spritedata[x]['Regions'][y]['SheetPoints'][z]['y'] = int(round(spritedata[x]['Regions'][y]['SheetPoints'][z]['y'] *
                                                                                                           (sheetdata[spritedata[x]['Regions'][y]['SheetID']]['y']/65535)))
                     else:
                         print('strange, this byte should be 0x16, but I got {} at position {}'.format(tmpvar,  i))
@@ -213,11 +213,11 @@ def sprite_dump(filein):
             else:
                 print('strange, this byte should be 0x12, but I got {} at position {}'.format(tmpvar,  i))
                 return
-    
+
     #
     #second: process metadata
     #
-    
+
     maxLeft = 0
     maxRight = 0
     maxAbove = 0
@@ -225,7 +225,7 @@ def sprite_dump(filein):
     spriteglobals = {'SpriteWidth':0,  'SpriteHeight':0,  'GlobalZeroX':0,  'GlobalZeroY':0}
     for x in range(totalsprites):
         for y in range(spritedata[x]['TotalRegions']):
-            
+
             regionMinX = 32767
             regionMaxX = -32767
             regionMinY = 32767
@@ -233,38 +233,38 @@ def sprite_dump(filein):
             for z in range (spritedata[x]['Regions'][y]['NumPoints']):
                 tmpX = spritedata[x]['Regions'][y]['ShapePoints'][z]['x']
                 tmpY = spritedata[x]['Regions'][y]['ShapePoints'][z]['y']
-                
+
                 spritedata[x]['Regions'][y]['Top'] = tmpY if tmpY > spritedata[x]['Regions'][y]['Top'] else spritedata[x]['Regions'][y]['Top']
                 spritedata[x]['Regions'][y]['Left'] = tmpX if tmpX < spritedata[x]['Regions'][y]['Left'] else spritedata[x]['Regions'][y]['Left']
                 spritedata[x]['Regions'][y]['Bottom'] = tmpY if tmpY < spritedata[x]['Regions'][y]['Bottom'] else spritedata[x]['Regions'][y]['Bottom']
                 spritedata[x]['Regions'][y]['Right'] = tmpX if tmpX > spritedata[x]['Regions'][y]['Right'] else spritedata[x]['Regions'][y]['Right']
-                
+
                 tmpX = spritedata[x]['Regions'][y]['SheetPoints'][z]['x']
                 tmpY = spritedata[x]['Regions'][y]['SheetPoints'][z]['y']
-                
+
                 regionMinX = tmpX if tmpX < regionMinX else regionMinX
                 regionMaxX = tmpX if tmpX > regionMaxX else regionMaxX
                 regionMinY = tmpY if tmpY < regionMinY else regionMinY
                 regionMaxY = tmpY if tmpY > regionMaxY else regionMaxY
 
             spritedata[x]['Regions'][y] = region_rotation(spritedata[x]['Regions'][y])
-            
+
             if (spritedata[x]['Regions'][y]['Rotation'] == 90 or spritedata[x]['Regions'][y]['Rotation'] == 270):
                 spritedata[x]['Regions'][y]['SpriteWidth'] = regionMaxY - regionMinY
                 spritedata[x]['Regions'][y]['SpriteHeight'] = regionMaxX - regionMinX
             else:
                 spritedata[x]['Regions'][y]['SpriteWidth'] = regionMaxX - regionMinX
                 spritedata[x]['Regions'][y]['SpriteHeight'] = regionMaxY - regionMinY
-            
+
             tmpX = spritedata[x]['Regions'][y]['SpriteWidth']
             tmpY = spritedata[x]['Regions'][y]['SpriteHeight']
-            
+
             #determine origin pixel (0,0)
             spritedata[x]['Regions'][y]['RegionZeroX'] = \
             int(round(abs(spritedata[x]['Regions'][y]['Left']) * (tmpX/(spritedata[x]['Regions'][y]['Right'] - spritedata[x]['Regions'][y]['Left']))))
             spritedata[x]['Regions'][y]['RegionZeroY'] = \
             int(round(abs(spritedata[x]['Regions'][y]['Bottom']) * (tmpY/(spritedata[x]['Regions'][y]['Top'] - spritedata[x]['Regions'][y]['Bottom']))))
-            
+
             #sprite image dimensions
             #max sprite size is determined from the zero points
             #the higher the 0, more pixels to the left/top are required
@@ -275,41 +275,41 @@ def sprite_dump(filein):
             tmpY = spritedata[x]['Regions'][y]['SpriteHeight'] - spritedata[x]['Regions'][y]['RegionZeroY']
             maxRight = tmpX if tmpX > maxRight else maxRight
             maxBelow = tmpY if tmpY > maxBelow else maxBelow
-           
+
     spriteglobals['SpriteWidth'] = maxLeft + maxRight
     spriteglobals['SpriteHeight'] = maxAbove + maxBelow
     spriteglobals['GlobalZeroX'] = maxLeft
     spriteglobals['GlobalZeroY'] = maxAbove
-    
+
 
     #seems like final sprite size takes into account the mask's line, so we add 2 to each dimension
     spriteglobals['SpriteWidth'] += 2
     spriteglobals['SpriteHeight'] += 2
-    
+
     maxrange = len(str(totalsprites))
-    
+
     #debug
     #print(spriteglobals)
-    
+
     #
     #third: all data gathered, time to start cutting
     #
-    
+
     sheetimage = []
     for x in range(totalsheets):
         sheetimage.append(Image.open(filein + '_tex' + (x * '_') + '.png').convert('RGBA'))
-    
-    
+
+
     for x in range(totalsprites):
         #debug
         #print ('sprite {}'.format(x))
         #print (spritedata[x])
-    
-        #credit goes to the author of http://stackoverflow.com/questions/22588074/polygon-crop-clip-using-python-pil 
+
+        #credit goes to the author of http://stackoverflow.com/questions/22588074/polygon-crop-clip-using-python-pil
         #for how to clip sprites from the spritesheet using a polygon/mask
-        
+
         outImage = Image.new('RGBA',  (spriteglobals['SpriteWidth'],  spriteglobals['SpriteHeight']),  None)
-        
+
         for y in range(spritedata[x]['TotalRegions']):
             polygon = []
             for z in range(spritedata[x]['Regions'][y]['NumPoints']):
@@ -323,38 +323,38 @@ def sprite_dump(filein):
             imMask = imMask.crop(bbox)
 
             tmpRegion = Image.new('RGBA',  regionsize,  None)
-            
+
             tmpRegion.paste(sheetimage[sheetID].crop(bbox),  None,  imMask)
             if (spritedata[x]['Regions'][y]['Mirroring']==1):
                 tmpRegion = tmpRegion.transform(regionsize, Image.EXTENT, (regionsize[0], 0, 0, regionsize[1]))
-            
+
             tmpRegion = tmpRegion.rotate(spritedata[x]['Regions'][y]['Rotation'],  expand=True)
-            
+
             #debug: save sprite components
             #tmpRegion.save(pathout + '/' + filein + '_sprite_dbg_' + str(x) + '_' + str(y) + '.png')
-            
+
             #align the zeroes
             pasteLeft = spriteglobals['GlobalZeroX'] - spritedata[x]['Regions'][y]['RegionZeroX']
-            pasteTop = spriteglobals['GlobalZeroY'] - spritedata[x]['Regions'][y]['RegionZeroY'] 
-            
+            pasteTop = spriteglobals['GlobalZeroY'] - spritedata[x]['Regions'][y]['RegionZeroY']
+
             #debug: where image is pasted
             #print('paste sprite {} region {} on {},{}'.format(x,  y,  pasteLeft,  pasteTop))
 
             outImage.paste(tmpRegion,  (pasteLeft,  pasteTop),  tmpRegion)
         outImage.save(pathout + '/' + filein + '_sprite_' + str(x).rjust(maxrange,  '0')  + '.png')
-    
+
     print('done')
-    
+
 
 
 def data_dump_to_hex(filein):
-    
+
     pathout = os.getcwd() + '/' + filein + '_out'
     if not (os.path.exists(pathout)):
         os.makedirs(pathout)
-    
+
     fileout = filein + '_dump.txt'
-        
+
     print('dumping {} raw data'.format(filein))
     with open(filein,  'rb') as fin,  open(pathout + '/' + fileout,  'w') as fout:
         i = 0
@@ -374,24 +374,24 @@ def data_dump_to_hex(filein):
         i += 7 #add 5 '00' bytes
         totalstrings,  = struct.unpack('<H',  bytes(data[i:i+2]))
         i += 2
-        
+
         #strings
         stringlist = [[0 for y in range (2)] for x in range(totalstrings)]
         for x in range (totalstrings):
             stringlist[x][0],  = struct.unpack('<H',  bytes(data[i:i+2]))
             i += 2
-        for x in range(totalstrings):            
+        for x in range(totalstrings):
             stringlen,  = struct.unpack('<B',  bytes(data[i:i+1]))
             i += 1
             stringlist[x][1],  = struct.unpack(str(stringlen) + 's',  bytes(data[i:i+stringlen]))
-            i += stringlen       
+            i += stringlen
         print('Total strings: {}'.format(totalstrings),  file=fout)
         maxrange = len(str(totalstrings))
         for x in range(totalstrings):
             print('{}:{};{}'.format(str(x).rjust(maxrange,  '0'), format(stringlist[x][0],  'x'),  stringlist[x][1].decode()),  file=fout)
 
         print(file=fout)
-        
+
         #0x17 and 0x1A blocks (empty)
         tmpvar,  = struct.unpack('<B',  bytes(data[i:i+1]))
         if  (tmpvar  == 0x17):
@@ -402,7 +402,7 @@ def data_dump_to_hex(filein):
             print ('1A block present',  file=fout)
             i += 5
         print(file=fout)
-        
+
         #sprite sheet blocks, either 0x01 or 0x18
         print('Total sprite sheets: {}'.format(totalsheets),  file=fout)
         maxrange = len(str(totalsheets))
@@ -419,7 +419,7 @@ def data_dump_to_hex(filein):
                 print('strange, this byte should be either 0x01 or 0x18, but I got {} at position {}'.format(tmpvar,  i))
                 return
         print(file=fout)
-        
+
         #sprite blocks, 0x12
         print('Total sprites: {}'.format(totalsprites),  file=fout)
         maxrange = len(str(totalsprites))
@@ -436,7 +436,7 @@ def data_dump_to_hex(filein):
                 print('strange, this byte should be 0x12, but I got {} at position {}'.format(tmpvar,  i))
                 return
         print(file=fout)
-        
+
         #text blocks: 0x19, 0x07, 0x0F
         print('Total text blocks: {}'.format(totaltexts),  file=fout)
         maxrange = len(str(totaltexts))
@@ -453,8 +453,8 @@ def data_dump_to_hex(filein):
                 print('strange, this byte should be either 0x19, 0x07 or 0x0F, but I got {} at position {}'.format(tmpvar,  i))
                 return
         print(file=fout)
-        
-        
+
+
         #transform matrices 0x08
         print('Total transformation matrices: {}'.format(totaltransfs),  file=fout)
         maxrange = len(str(totaltransfs))
@@ -471,7 +471,7 @@ def data_dump_to_hex(filein):
                 print('strange, this byte should be 0x08, but I got {} at position {}'.format(tmpvar,  i))
                 return
         print(file=fout)
-        
+
         #color transforms 0x09
         print('Total color transforms: {}'.format(totalcolortrans),  file=fout)
         maxrange = len(str(totalcolortrans))
@@ -504,15 +504,15 @@ def data_dump_to_hex(filein):
                 print('strange, this byte should be 0x0C, but I got {} at position {}'.format(tmpvar,  i))
                 return
         print(file=fout)
-    
+
     print ('done')
 
 
 
 
-if __name__ == "__main__":    
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        formatter_class=argparse.RawDescriptionHelpFormatter, 
+        formatter_class=argparse.RawDescriptionHelpFormatter,
         description = textwrap.dedent('''\
         Extract data from Clash Royale sprite files.
         All output is saved to a folder named <input_file_name>_out.
@@ -530,6 +530,6 @@ if __name__ == "__main__":
 
     if args.d:
         data_dump_to_hex(args.files[0])
-    
+
     if args.s:
         sprite_dump(args.files[0])
