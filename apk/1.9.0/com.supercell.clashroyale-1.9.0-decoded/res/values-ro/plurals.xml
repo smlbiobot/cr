@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Aţi evaluat serviciul cu %d stele.</item>
+        <item quantity="one">Aţi evaluat serviciul cu 1 stea.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d mesaje noi de la Asistenţă clienţi</item>
+        <item quantity="one">Mesaj nou de la Asistenţă clienţi</item>
+    </plurals>
+</resources>

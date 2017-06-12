@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/hs__action_search" android:id="@id/hs__search" android:visible="false" android:title="@string/hs__search_title" app:showAsAction="always|collapseActionView" app:actionLayout="@layout/hs__action_view_search" />
+    <item android:id="@id/hs__contact_us" android:visible="false" android:title="@string/hs__contact_us_btn" app:showAsAction="always" app:actionLayout="@layout/hs__badge_layout" />
+    <item android:icon="@drawable/hs__attach_screenshot_action_button" android:id="@id/hs__attach_screenshot" android:visible="false" android:title="@string/hs__attach_screenshot_btn" app:showAsAction="always" />
+    <item android:icon="@drawable/hs__send" android:id="@id/hs__start_new_conversation" android:visible="false" android:title="@string/hs__contact_us_btn" app:showAsAction="always" />
+    <item android:icon="@drawable/hs__search_on_conversation_done" android:id="@id/hs__action_done" android:visible="false" android:title="@string/hs__done_btn" app:showAsAction="always" />
+</menu>

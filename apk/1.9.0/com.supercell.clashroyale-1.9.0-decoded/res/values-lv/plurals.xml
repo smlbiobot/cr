@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Jūs novērtējāt pakalpojumus ar  %d zvaigznēm.</item>
+        <item quantity="one">Jūs novērtējāt pakalpojumus ar 1 zvaigzni.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d jaunas ziņas no atbalsta grupas</item>
+        <item quantity="one">Jauna ziņa no atbalsta grupas</item>
+    </plurals>
+</resources>

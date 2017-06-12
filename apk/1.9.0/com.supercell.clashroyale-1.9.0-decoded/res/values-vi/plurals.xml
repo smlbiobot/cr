@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Bạn đã cho điểm dịch vụ %d sao.</item>
+        <item quantity="one">Bạn đã cho điểm dịch vụ 1 sao.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d tin nhắn mới từ Hỗ trợ Khách hàng</item>
+        <item quantity="one">Tin nhắn mới từ Hỗ trợ Khách hàng</item>
+    </plurals>
+</resources>

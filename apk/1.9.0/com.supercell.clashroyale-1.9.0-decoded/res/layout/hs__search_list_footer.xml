@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contact_us_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_medium">
+        <View android:layout_width="fill_parent" android:layout_height="1.0dip" style="@style/HSDivider" />
+        <com.helpshift.views.HSTextView android:gravity="center" android:id="@id/contact_us_hint_text" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_large" android:text="@string/hs__search_footer" />
+        <com.helpshift.views.HSButton android:id="@id/report_issue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_small" android:layout_marginBottom="@dimen/activity_vertical_margin_medium" android:text="@string/hs__contact_us_btn" style="?attr/hs__contactUsButtonStyle" />
+    </LinearLayout>
+    <com.helpshift.views.HSTextView android:gravity="center" android:layout_gravity="center" android:id="@id/no_faqs_view" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_large" android:layout_marginBottom="@dimen/activity_vertical_margin_medium" android:text="@string/hs__faqs_search_footer" style="@style/Base.TextAppearance.AppCompat.Medium" />
+</LinearLayout>

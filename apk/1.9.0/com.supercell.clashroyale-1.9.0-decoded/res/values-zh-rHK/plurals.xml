@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">您將服務評分為 %d 顆星。</item>
+        <item quantity="one">您將服務評分為 1 顆星。</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">來自客服的 %d 則新訊息</item>
+        <item quantity="one">來自客服的一則新訊息</item>
+    </plurals>
+</resources>

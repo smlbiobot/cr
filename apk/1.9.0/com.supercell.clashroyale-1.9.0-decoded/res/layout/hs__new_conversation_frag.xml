@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSEditText android:id="@id/conversation_detail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hs__new_conversation_hint" android:inputType="text" />
+    <com.helpshift.views.HSEditText android:id="@id/username" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hs__username_hint" android:inputType="text" />
+    <com.helpshift.views.HSEditText android:id="@id/email" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hs__email_hint" android:inputType="textEmailAddress" />
+    <ImageView android:id="@id/screenshot" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

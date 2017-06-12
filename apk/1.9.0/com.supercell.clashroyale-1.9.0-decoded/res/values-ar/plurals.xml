@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">لقد قيمت الخدمة بـ%d نجوم.</item>
+        <item quantity="one">لقد قيمت الخدمة بنجمةٍ واحدةٍ</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d رسائل جديدة من الدعم الفني</item>
+        <item quantity="one">رسالة جديدة من الدعم الفني</item>
+    </plurals>
+</resources>

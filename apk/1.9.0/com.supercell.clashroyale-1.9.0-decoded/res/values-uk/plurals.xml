@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Ви оцінили наші послуги %d зірочками.</item>
+        <item quantity="one">Ви оцінили наші послуги 1-єю зірочкою.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d нових повідомлень від служби підтримки</item>
+        <item quantity="one">Нове повідомлення від служби підтримки</item>
+    </plurals>
+</resources>

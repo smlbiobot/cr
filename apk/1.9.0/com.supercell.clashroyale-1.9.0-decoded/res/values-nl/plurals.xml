@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">U hebt onze service beoordeeld met %d sterren</item>
+        <item quantity="one">U hebt onze service beoordeeld met 1 ster</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d nieuwe berichten van Support</item>
+        <item quantity="one">Nieuw bericht van Support</item>
+    </plurals>
+</resources>

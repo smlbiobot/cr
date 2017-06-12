@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Du gav vår service %d stjerner.</item>
+        <item quantity="one">Du gav vår service 1 stjerne.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d nye meldinger fra Brukerstøtte</item>
+        <item quantity="one">Ny melding fra Brukerstøtte</item>
+    </plurals>
+</resources>

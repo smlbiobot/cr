@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Anda menilai layanan dengan %d bintang.</item>
+        <item quantity="one">Anda menilai layanan dengan 1 bintang.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d pesan baru dari Dukungan</item>
+        <item quantity="one">Pesan baru dari Dukungan</item>
+    </plurals>
+</resources>

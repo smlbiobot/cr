@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingLeft="@dimen/hs__listPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.8">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/admin_message" android:background="?hs__chatBubbleAdminBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.helpshift.views.HSTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="?hs__messagesTextColor" android:autoLink="all" android:id="@android:id/text1" android:paddingLeft="@dimen/hs__msgPreferredItemPaddingLeft" android:paddingTop="@dimen/hs__msgPreferredItemPaddingTop" android:paddingRight="@dimen/hs__msgPreferredItemPaddingRight" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ProgressBar android:gravity="center" android:id="@android:id/progress" android:paddingBottom="@dimen/hs__msgPreferredItemPaddingTop" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyle" />
+            <LinearLayout android:orientation="vertical" android:id="@android:id/widget_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@android:id/custom" android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.5" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageButton android:id="@android:id/button2" android:background="?hs__selectableItemBackground" android:paddingTop="@dimen/hs__msgActionButtonPadding" android:paddingBottom="@dimen/hs__msgActionButtonPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/hs__action_no" android:text="@string/hs__unsolved_btn" android:layout_weight="1.0" />
+                    <View android:background="@android:color/darker_gray" android:layout_width="1.0dip" android:layout_height="fill_parent" android:alpha="0.5" />
+                    <ImageButton android:id="@android:id/button1" android:background="?hs__selectableItemBackground" android:paddingTop="@dimen/hs__msgActionButtonPadding" android:paddingBottom="@dimen/hs__msgActionButtonPadding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/hs__action_yes" android:text="@string/hs__solved_btn" android:layout_weight="1.0" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.2" />
+</LinearLayout>

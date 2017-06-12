@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Βαθμολογήσατε την υπηρεσία με %d αστέρια.</item>
+        <item quantity="one">Βαθμολογήσατε την υπηρεσία με 1 αστέρι.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">% d νέα μηνύματα από Υποστήριξη</item>
+        <item quantity="one">Νέο μήνυμα από Υποστήριξη</item>
+    </plurals>
+</resources>

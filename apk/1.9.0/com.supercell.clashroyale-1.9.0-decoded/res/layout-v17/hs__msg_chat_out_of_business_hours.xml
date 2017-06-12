@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/activity_horizontal_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0" android:layout_marginStart="@dimen/activity_horizontal_margin_medium">
+        <LinearLayout android:orientation="vertical" android:id="@id/admin_message" android:background="?hs__chatBubbleAdminBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/hs__textSizeMedium" android:textColor="?hs__chatBubbleAdminText" android:textColorLink="?hs__chatBubbleAdminLink" android:autoLink="all" android:id="@id/message" android:padding="@dimen/activity_horizontal_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__chat_out_of_business_hours" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorHint" android:id="@id/date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_marginTop="2.0dip" android:layout_marginStart="@dimen/activity_horizontal_margin_medium" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

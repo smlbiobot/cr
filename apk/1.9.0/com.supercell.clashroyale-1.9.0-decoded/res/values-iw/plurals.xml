@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">דירגתם את השירות עם %d כוכבים.</item>
+        <item quantity="one">דירגתם את השירות עם כוכב אחד.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d הודעה חדשה מהתמיכה</item>
+        <item quantity="one">הודעה חדשה מהתמיכה</item>
+    </plurals>
+</resources>

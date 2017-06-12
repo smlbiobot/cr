@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">คุณได้ให้คะแนนบริการนี้ %d ดาว</item>
+        <item quantity="one">คุณได้ให้คะแนนบริการนี้ 1 ดาว</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d ข้อความใหม่จากฝ่ายช่วยเหลือ</item>
+        <item quantity="one">ข้อความใหม่จากฝ่ายช่วยเหลือ</item>
+    </plurals>
+</resources>

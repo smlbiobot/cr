@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">আপনি পরিষেবাটিকে %d তারকা মূল্যায়ন করেছেন।</item>
+        <item quantity="one">আপনি পরিষেবাটিকে 1 তারকা মূল্যায়ন করেছেন।</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d সহায়তা থেকে নতুন বার্তা</item>
+        <item quantity="one">সহায়তা থেকে নতুন বার্তা</item>
+    </plurals>
+</resources>

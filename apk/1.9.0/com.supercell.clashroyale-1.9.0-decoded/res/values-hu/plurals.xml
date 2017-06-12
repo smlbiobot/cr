@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">A szolgáltatásunkat %d csillagra értékelte.</item>
+        <item quantity="one">A szolgáltatásunkat 1 csillagra értékelte.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d új üzenet az Ügyfélszolgálattól</item>
+        <item quantity="one">Új üzenet az Ügyfélszolgálattól</item>
+    </plurals>
+</resources>

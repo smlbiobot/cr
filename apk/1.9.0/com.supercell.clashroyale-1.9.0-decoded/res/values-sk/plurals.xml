@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Ohodnotili ste nás %d hviezdičkami.</item>
+        <item quantity="one">Ohodnotili ste nás 1 hviezdičkou.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d nových správ od podpory</item>
+        <item quantity="one">Nová správa od Podpory</item>
+    </plurals>
+</resources>

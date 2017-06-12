@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.helpshift.views.HSTabLayout android:id="@id/pager_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="?colorAccent" app:tabMode="scrollable" style="?attr/hs__faqsPagerTabStripStyle" />
+    <FrameLayout android:id="@id/view_pager_container" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <android.support.v4.view.ViewPager android:id="@id/section_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+</LinearLayout>

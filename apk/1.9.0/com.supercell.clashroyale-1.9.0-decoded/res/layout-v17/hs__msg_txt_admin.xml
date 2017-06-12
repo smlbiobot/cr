@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/activity_horizontal_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0" android:layout_marginStart="@dimen/activity_horizontal_margin_medium">
+        <LinearLayout android:orientation="vertical" android:id="@id/admin_message" android:background="?hs__chatBubbleAdminBackground" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeMedium" android:textColor="?hs__chatBubbleAdminText" android:textColorLink="?hs__chatBubbleAdminLink" android:id="@android:id/text1" android:padding="@dimen/activity_horizontal_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorHint" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_marginTop="2.0dip" android:layout_marginStart="@dimen/activity_horizontal_margin_medium" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

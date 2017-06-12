@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">ਤੁਸ %d ਿਸਤਾਿਰਆਂਨਾਲ ਸੇਵਾ ਨੰੂਦਰਜਾ ਿਦੱਤਾ ਹ।ੈ</item>
+        <item quantity="one">ਤੁਸ 1 ਿਸਤਾਰਾ ਨਾਲ ਸੇਵਾ ਨੰੂਦਰਜਾ ਿਦੱਤਾ ਹ।ੈ</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">ਸਿਹਯੋਗ ਤ%d ਨਵਸੁਨĂਹੇ</item>
+        <item quantity="one">ਸਿਹਯੋਗ ਤਨਵਸੁਨĂਹੇ</item>
+    </plurals>
+</resources>

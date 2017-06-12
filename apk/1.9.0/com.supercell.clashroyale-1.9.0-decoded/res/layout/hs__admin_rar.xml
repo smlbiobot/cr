@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSTextView android:id="@id/message_body" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ProgressBar android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageButton android:id="@id/review_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hs__action_review" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:background="?selectableItemBackgroundBorderless" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:gravity="center" android:id="@id/hs__conversation_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="?hs__conversationActionButtonIcon" android:tint="?hs__actionButtonIconColor" android:contentDescription="@string/hs__new_conversation_header" android:layout_marginStart="8.0dip" />
+    <View android:id="@id/hs__notification_badge_padding" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="fill_parent" />
+    <com.helpshift.views.HSTextView android:textSize="10.0sp" android:textStyle="bold" android:textColor="?colorPrimary" android:gravity="center" android:id="@id/hs__notification_badge" android:background="@drawable/hs__rounded_corner_rectangle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="2.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="16.0dip" />
+</LinearLayout>

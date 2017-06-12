@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">شما به این سرویس امتیاز %dستاره دادید</item>
+        <item quantity="one">شما به این سرویس امتیاز 1 ستاره دادید</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d پیام های جدید از پشتیبانی</item>
+        <item quantity="one">پیام جدید از پشتیبانی</item>
+    </plurals>
+</resources>
