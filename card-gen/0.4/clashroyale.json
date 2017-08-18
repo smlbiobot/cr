@@ -578,7 +578,7 @@
         "poison": {
             "aka": [],
             "elixir": 4,
-            "rarity": "rare",
+            "rarity": "epic",
             "tid": "TID_SPELL_INFO_POISON",
             "cpid": "Poison",
             "sfid": "poison"
