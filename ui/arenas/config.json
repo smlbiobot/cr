@@ -1,0 +1,54 @@
+{
+    "arenas": [
+        {
+            "id": "arena-0",
+            "seq": []
+        },
+        {
+            "id": "arena-1",
+            "seq": []
+        },
+        {
+            "id": "arena-2",
+            "seq": []
+        },
+        {
+            "id": "arena-3",
+            "seq": []
+        },
+        {
+            "id": "arena-4",
+            "seq": []
+        },
+        {
+            "id": "arena-5",
+            "seq": []
+        },
+        {
+            "id": "arena-6",
+            "seq": []
+        },
+        {
+            "id": "arena-7",
+            "seq": []
+        },
+        {
+            "id": "arena-8",
+            "seq": []
+        },
+        {
+            "id": "arena-9",
+            "seq": []
+        },
+        {
+            "id": "arena-10",
+            "seq": []
+        },
+        {
+            "id": "arena-11",
+            "seq": []
+        }
+    ],
+    "path_src": "./src",
+    "path_dst": "./out"
+}

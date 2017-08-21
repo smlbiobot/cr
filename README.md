@@ -34,7 +34,7 @@ QuickBMS is used to decrypt the CSV files.
 
 5. With all the sc files decoded, you can now safely remove them. `find  -name '*.sc' -exec rm {} \;`
 
-6. Copy sc_decode.py to ./assets/sc/ folder and change that as your working folder. Run `find . -type f -not -name '*tex' -not -name '*.png' -not -name '*.py' -exec python3 ./sc_decode.py -s {} \;` in ./assets/sc folder
+6. Copy sc_decode.py and Reader.py to ./assets/sc/ folder and change that as your working folder. Run `find . -not -name '*.png' -not -name '*.py' -exec python3 ./sc_decode.py -s {}  \;` in ./assets/sc folder
 
 ## Fan Kit
 
