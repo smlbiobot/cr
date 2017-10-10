@@ -15,6 +15,7 @@ CR-SC-Dump is used to decrypt sc/*_tex.sc files which output image sprites of th
 Additionally, sc_decode is used to turn the sprites into useful frames.
 
 * Source: https://github.com/umop-aplsdn/sc_decode
+* High-Res / Low-Res capable Fork: https://github.com/Galaxy1036/sc_decode
 
 ### CSV files decryption
 
