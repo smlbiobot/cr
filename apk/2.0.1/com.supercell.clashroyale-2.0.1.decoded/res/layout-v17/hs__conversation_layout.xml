@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:windowBackground" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/hs__messagesList" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="0.0dip" android:scrollingCache="false" android:transcriptMode="alwaysScroll" android:layout_weight="1.0" android:isScrollContainer="true" />
+    <LinearLayout android:orientation="vertical" android:id="@id/hs__confirmation" android:background="?hs__footerPromptBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?hs__separatorColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeMedium" android:textColor="?android:textColorPrimary" android:id="@id/resolution_question_text" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingTop="24.0dip" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__confirmation_msg" android:paddingStart="@dimen/activity_horizontal_margin_medium" android:paddingEnd="@dimen/activity_horizontal_margin_medium" />
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="12.0dip" android:paddingEnd="12.0dip">
+            <com.helpshift.views.HSButton android:id="@id/resolution_rejected_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__mark_no" style="@style/Helpshift.Style.BorderlessButton" />
+            <com.helpshift.views.HSButton android:id="@id/resolution_accepted_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__mark_yes" style="@style/Helpshift.Style.BorderlessButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/relativeLayout1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?hs__separatorColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?hs__composeBackgroundColor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="56.0dip">
+            <com.helpshift.views.HSEditText android:id="@id/hs__messageText" android:background="@android:color/transparent" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:layout_width="0.0dip" android:layout_height="wrap_content" android:hint="@string/hs__chat_hint" android:maxLines="@integer/hs__chat_max_lines" android:layout_weight="1.0" android:inputType="textMultiLine" android:imeOptions="actionSend" />
+            <ImageButton android:layout_gravity="center" android:id="@id/hs__sendMessageBtn" android:background="?selectableItemBackground" android:layout_width="56.0dip" android:layout_height="56.0dip" android:src="@drawable/hs__send" android:contentDescription="@string/hs__send_msg_btn" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

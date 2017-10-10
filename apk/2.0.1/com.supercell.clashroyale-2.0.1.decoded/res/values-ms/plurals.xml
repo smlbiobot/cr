@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Anda memberi %d bintang kepada perkhidmatan ini.</item>
+        <item quantity="one">Anda memberi 1 bintang kepada perkhidmatan ini.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d mesej baharu daripada Sokongan</item>
+        <item quantity="one">Mesej baharu daripada Sokongan</item>
+    </plurals>
+</resources>

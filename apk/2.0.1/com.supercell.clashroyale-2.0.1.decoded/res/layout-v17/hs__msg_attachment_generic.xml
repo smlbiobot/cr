@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0" android:layout_marginStart="@dimen/activity_horizontal_margin_medium">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/admin_message" android:background="?hs__chatBubbleAdminBackground" android:layout_width="fill_parent" android:layout_height="56.0dip">
+            <RelativeLayout android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_marginStart="@dimen/activity_horizontal_margin_medium">
+                <ProgressBar android:id="@id/progress" android:visibility="gone" android:layout_width="34.0dip" android:layout_height="34.0dip" android:indeterminate="true" android:layout_centerInParent="true" />
+                <View android:id="@id/download_button_ring" android:background="@drawable/hs__ring" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/download_icon" android:visibility="gone" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/hs__action_download" android:scaleType="fitCenter" android:tint="?colorAccent" android:layout_centerInParent="true" />
+                <ImageView android:id="@id/attachment_icon" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/hs__attach_screenshot_action_button" android:scaleType="fitCenter" android:tint="?colorAccent" android:layout_centerInParent="true" android:rotation="90.0" />
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/hs__msgPreferredItemPaddingLeft" android:layout_marginRight="@dimen/hs__msgPreferredItemPaddingRight" android:layout_weight="1.0" android:layout_marginStart="@dimen/hs__msgPreferredItemPaddingLeft" android:layout_marginEnd="@dimen/hs__msgPreferredItemPaddingRight">
+                <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorPrimary" android:ellipsize="middle" android:id="@id/attachment_file_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_alignParentTop="true" />
+                <com.helpshift.views.HSTextView android:textSize="12.0sp" android:textColor="?android:textColorSecondary" android:id="@id/attachment_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/attachment_file_name" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <com.helpshift.views.HSTextView android:id="@id/attachment_date" style="@style/Helpshift.Style.AdminMessageDate" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

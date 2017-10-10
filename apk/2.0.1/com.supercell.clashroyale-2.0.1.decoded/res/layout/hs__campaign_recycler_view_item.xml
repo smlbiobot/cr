@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="76.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/icon_container" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="72.0dip" android:layout_height="fill_parent">
+        <com.helpshift.campaigns.views.CircleImageView android:id="@id/campaign_icon" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </FrameLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/icon_container">
+        <RelativeLayout android:id="@id/title_and_date" android:paddingTop="8.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.helpshift.views.HSTextView android:textSize="16.0sp" android:textColor="?hs__inboxTitleTextColor" android:id="@id/campaign_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_toLeftOf="@id/campaign_time" android:layout_alignParentLeft="true" />
+            <com.helpshift.views.HSTextView android:textSize="13.0sp" android:textColor="?hs__inboxTimeStampTextColor" android:id="@id/campaign_time" android:paddingLeft="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBaseline="@id/campaign_title" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <com.helpshift.views.HSTextView android:textSize="13.0sp" android:textColor="?hs__inboxBodyTextColor" android:ellipsize="end" android:id="@id/campaign_body" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_below="@id/title_and_date" />
+        <View android:id="@id/separator" android:background="?hs__inboxSeparatorColor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/hs__action_search" android:id="@id/hs__search" android:visible="true" android:title="@string/hs__search_title" app:showAsAction="always|collapseActionView" app:actionLayout="@layout/hs__campaign_action_view_search" />
+</menu>

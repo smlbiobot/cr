@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0">
+        <FrameLayout android:id="@id/admin_message" android:background="?hs__chatBubbleAdminBackground" android:padding="1.0dip" android:layout_width="250.0dip" android:layout_height="250.0dip">
+            <com.helpshift.support.views.HSRoundedImageView android:id="@id/admin_attachment_imageview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:alpha="1.0" style="@style/Helpshift.Style.AdminAttachmentBubble" />
+            <FrameLayout android:layout_gravity="center" android:id="@id/download_progressbar_container" android:background="@drawable/hs__attachment_progressbar_background" android:layout_width="wrap_content" android:layout_height="36.0dip" android:alpha="@dimen/image_attachment_progress_container_alpha">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/download_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+                    <ImageView android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/hs__action_download" android:tint="@color/hs__color_FFFFFFFF" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/hs__color_FFFFFFFF" android:id="@id/attachment_file_size" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <ProgressBar android:id="@id/download_attachment_progressbar" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_margin="6.0dip" />
+            </FrameLayout>
+        </FrameLayout>
+        <com.helpshift.views.HSTextView android:id="@id/date" style="@style/Helpshift.Style.AdminMessageDate" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

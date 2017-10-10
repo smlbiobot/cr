@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="?android:windowBackground" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <FrameLayout android:id="@id/inbox_fragment_container" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <View android:id="@id/vertical_divider" android:background="?hs__inboxSeparatorColor" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+            <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+                <com.helpshift.views.HSTextView android:textColor="?hs__inboxTitleTextColor" android:gravity="center" android:layout_gravity="center" android:id="@id/select_campaign_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="16.0dip" android:text="@string/hs__cam_select_a_message_message" />
+                <FrameLayout android:id="@id/detail_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <ImageView android:id="@id/hs_logo" android:background="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/hs__logo" />
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Annoit palvelulle %d tähteä.</item>
+        <item quantity="one">Annoit palvelulle 1 tähden.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d uutta viestiä asiakastuelta</item>
+        <item quantity="one">Uusi viesti asiakastuelta</item>
+    </plurals>
+</resources>

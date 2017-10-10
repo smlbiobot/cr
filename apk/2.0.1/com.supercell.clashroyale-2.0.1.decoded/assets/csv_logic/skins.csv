@@ -1,0 +1,11 @@
+Name,FileName,ExportName,ExportNameRed,TopExportName,TopExportNameRed,Character,ValueGems,TID,IconSWF,IconExportName,IsInUse,DeathEffect,DeathEffect2,EventSkin
+String,String,String,String,String,String,String,int,String,String,String,boolean,string,string,boolean
+KingDefault,sc/building_tower.sc,KingTower_blue,KingTower_red,,,KingTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,King_player_die,,
+PrincessDefault,sc/building_tower.sc,StarTower_base_blue,StarTower_base_red,StarTower_top_blue,StarTower_top_red,PricessTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,TowerExplode,,
+PrincessGold,sc/building_tower.sc,princesstower_goldrush_01,princesstower_goldrush_02,princesstower_goldrush_01_top,princesstower_goldrush_02_top,PrincessTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,gold_tower_death1,,TRUE
+KingGold,sc/building_tower.sc,kingtower_goldrush_01,kingtower_goldrush_02,,,KingTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,gold_tower_death2,,TRUE
+PrincessPump,sc/building_tower.sc,princesstower_pump_01,princesstower_pump_02,,,PrincessTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,King_player_die,,TRUE
+KingPump,sc/building_tower.sc,kingtower_pump_01,kingtower_pump_02,,,KingTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,TowerExplode,,TRUE
+PrincessGem,sc/building_tower.sc,princesstower_gemrush_01,princesstower_gemrush_02,princesstower_gemrush_01_top,princesstower_gemrush_02_top,PrincessTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,gem_tower_death1,gem_tower_death2,TRUE
+KingGem,sc/building_tower.sc,kingtower_gemrush_01,kingtower_gemrush_02,,,KingTower,0,TID_SKIN_DEFAULT,sc/ui.sc,tower_asset_anim,TRUE,gem_tower_death3,,TRUE
+AngryBarbarianTouchdown,sc/chr_barbarian.sc,angry_barbarian_td,angry_barbarian_td_red,,,AngryBarbarian,0,,,,TRUE,,,TRUE

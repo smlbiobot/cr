@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/inbox_list" android:background="?android:windowBackground" android:scrollbars="vertical" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.helpshift.views.HSTextView android:gravity="center" android:layout_gravity="center" android:id="@id/view_no_campaigns" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__cam_no_campaigns_found" />
+</FrameLayout>

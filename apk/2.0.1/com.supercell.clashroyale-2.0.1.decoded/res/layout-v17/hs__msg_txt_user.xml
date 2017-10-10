@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/hs__listPreferredItemPaddingTop" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <LinearLayout android:gravity="end" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0" android:layout_marginEnd="@dimen/activity_horizontal_margin_medium">
+        <LinearLayout android:id="@id/user_message_container" style="@style/Helpshift.Style.UserTextMessageContainer">
+            <com.helpshift.views.HSTextView android:layout_gravity="center" android:id="@id/user_message_text" style="@style/Helpshift.Style.UserTextMessage" />
+        </LinearLayout>
+        <com.helpshift.views.HSTextView android:id="@id/user_date_text" style="@style/Helpshift.Style.UserMessageDate" />
+    </LinearLayout>
+</LinearLayout>

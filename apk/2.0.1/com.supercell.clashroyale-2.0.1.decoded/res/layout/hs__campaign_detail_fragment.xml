@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/campaign_detail_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/campaign_cover_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.helpshift.campaigns.views.AdjustableImageView android:id="@id/campaign_cover_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" />
+                <ProgressBar android:id="@id/campaign_cover_image_progress" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyle" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/campaign_cover_image_container">
+                <com.helpshift.views.HSTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="20.0sp" android:textStyle="bold" android:id="@id/campaign_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" />
+                <com.helpshift.views.HSTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:id="@id/campaign_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:lineSpacingMultiplier="1.43" />
+                <com.helpshift.views.HSButton android:textSize="14.0sp" android:id="@id/action1_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/borderlessButtonStyle" />
+                <com.helpshift.views.HSButton android:textSize="14.0sp" android:id="@id/action2_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/borderlessButtonStyle" />
+                <com.helpshift.views.HSButton android:textSize="14.0sp" android:id="@id/action3_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/borderlessButtonStyle" />
+                <com.helpshift.views.HSButton android:textSize="14.0sp" android:id="@id/action4_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" style="?android:attr/borderlessButtonStyle" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <ProgressBar android:gravity="center" android:layout_gravity="center" android:id="@id/progress_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ViewStub android:id="@id/hs__campaign_expired_view_stub" android:layout="@layout/hs__campaign_expired_message_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>
