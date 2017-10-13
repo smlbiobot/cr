@@ -1,9 +1,9 @@
+[submodule "scripts/sc_decode"]
+	path = scripts/sc_decode
+	url = https://github.com/Galaxy1036/sc_decode
 [submodule "scripts/cr-sc-dump"]
 	path = scripts/cr-sc-dump
 	url = https://github.com/123456abcdef/cr-sc-dump.git
 [submodule "scripts/supercell_resource_decoder"]
 	path = scripts/supercell_resource_decoder
 	url = https://github.com/proydakov/supercell_resource_decoder
-[submodule "scripts/sc_decode"]
-	path = scripts/sc_decode
-	url = https://github.com/Galaxy1036/sc_decode
