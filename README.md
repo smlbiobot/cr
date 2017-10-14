@@ -1,6 +1,6 @@
 # Clash Royale
 
-Since this repo is getting somewhat large, Additional repositories have been created which contain subsets of content in this repo:
+Since this repo is getting somewhat large, additional repositories have been created which contain subsets of content in this repo:
 
 * [cr-csv](https://github.com/smlbiobot/cr-csv): contains only the CSV files extracted from the APK. 
 * [cr-cardgen](https://github.com/smlbiobot/cr-cardgen): Card image generation scripts, with each version tagged as individual releases.
