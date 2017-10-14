@@ -1,5 +1,11 @@
 # Clash Royale
 
+Since this repo is getting somewhat large, Additional repositories have been created which contain subsets of content in this repo:
+
+* [cr-csv](https://github.com/smlbiobot/cr-csv): contains only the CSV files extracted from the APK. 
+* [cr-cardgen](https://github.com/smlbiobot/cr-cardgen): Card image generation scripts, with each version tagged as individual releases.
+* [cr-fankit-official](https://github.com/smlbiobot/cr-fankit-official): Supercell has released a [Dropbox with official fan content](https://www.dropbox.com/sh/j6ropqjysukhj3s/AADsjq5jBAEugSXv7IkghAfca?dl=0). This a mirror of that Dropbox content. 
+
 ## APK
 
 Assets were extracted from the Clash Royale APK using publicly available scripts.
@@ -25,7 +31,7 @@ QuickBMS is used to decrypt the CSV files.
 
 ### Step by Step
 
-1. Rename apk to zip and expand to folder with any zip file handler.
+1. Rename apk to zip and expand to folder with any zip file handler. (alternatively, run `apktool d clashroyale.apk` to extract files and decompile to smali if you wish to do some additional digging) 
 
 2. Copy dumpsc.py into ./assets/sc folder and run `find . -name '*_tex.sc' | xargs python ./dumpsc.py` This will decrypt texture files as PNG inside the ./assets/sc folder. Keep them for use later. You may remove dumpsc.py from the folder after it has done its job.
 
