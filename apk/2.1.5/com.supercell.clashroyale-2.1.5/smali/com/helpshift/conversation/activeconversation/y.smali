@@ -1,0 +1,79 @@
+.class Lcom/helpshift/conversation/activeconversation/y;
+.super Lcom/helpshift/common/domain/m;
+
+
+# instance fields
+.field a:I
+
+.field final synthetic b:Lcom/helpshift/conversation/activeconversation/t;
+
+
+# direct methods
+.method constructor <init>(Lcom/helpshift/conversation/activeconversation/t;I)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/helpshift/conversation/activeconversation/y;->b:Lcom/helpshift/conversation/activeconversation/t;
+
+    invoke-direct {p0}, Lcom/helpshift/common/domain/m;-><init>()V
+
+    iput p2, p0, Lcom/helpshift/conversation/activeconversation/y;->a:I
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()V
+    .locals 3
+
+    const/4 v2, 0x0
+
+    iget v0, p0, Lcom/helpshift/conversation/activeconversation/y;->a:I
+
+    iget-object v1, p0, Lcom/helpshift/conversation/activeconversation/y;->b:Lcom/helpshift/conversation/activeconversation/t;
+
+    iget-object v1, v1, Lcom/helpshift/conversation/activeconversation/t;->c:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v1}, Ljava/util/concurrent/atomic/AtomicInteger;->get()I
+
+    move-result v1
+
+    if-ne v0, v1, :cond_0
+
+    iget-object v0, p0, Lcom/helpshift/conversation/activeconversation/y;->b:Lcom/helpshift/conversation/activeconversation/t;
+
+    iget-object v0, v0, Lcom/helpshift/conversation/activeconversation/t;->h:Lcom/helpshift/conversation/activeconversation/aa;
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v0, "Helpshift_LiveUpdateDM"
+
+    const-string/jumbo v1, "Ping timed out, resetting connection"
+
+    invoke-static {v0, v1, v2, v2}, Lcom/helpshift/util/q;->a(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;[Lcom/helpshift/h/b/a;)V
+
+    iget-object v0, p0, Lcom/helpshift/conversation/activeconversation/y;->b:Lcom/helpshift/conversation/activeconversation/t;
+
+    iget-object v0, v0, Lcom/helpshift/conversation/activeconversation/t;->m:Lcom/helpshift/common/domain/m;
+
+    invoke-virtual {v0}, Lcom/helpshift/common/domain/m;->a()V
+
+    new-instance v0, Lcom/helpshift/conversation/activeconversation/w;
+
+    iget-object v1, p0, Lcom/helpshift/conversation/activeconversation/y;->b:Lcom/helpshift/conversation/activeconversation/t;
+
+    iget-object v2, p0, Lcom/helpshift/conversation/activeconversation/y;->b:Lcom/helpshift/conversation/activeconversation/t;
+
+    iget-object v2, v2, Lcom/helpshift/conversation/activeconversation/t;->c:Ljava/util/concurrent/atomic/AtomicInteger;
+
+    invoke-virtual {v2}, Ljava/util/concurrent/atomic/AtomicInteger;->incrementAndGet()I
+
+    move-result v2
+
+    invoke-direct {v0, v1, v2}, Lcom/helpshift/conversation/activeconversation/w;-><init>(Lcom/helpshift/conversation/activeconversation/t;I)V
+
+    invoke-virtual {v0}, Lcom/helpshift/conversation/activeconversation/w;->a()V
+
+    :cond_0
+    return-void
+.end method

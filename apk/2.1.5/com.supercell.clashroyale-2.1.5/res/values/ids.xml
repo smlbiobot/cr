@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="action_bar_activity_content" />
+    <item type="id" name="action_bar_spinner" />
+    <item type="id" name="action_menu_divider" />
+    <item type="id" name="action_menu_presenter" />
+    <item type="id" name="ghost_view" />
+    <item type="id" name="home" />
+    <item type="id" name="item_touch_helper_previous_elevation" />
+    <item type="id" name="line1" />
+    <item type="id" name="line3" />
+    <item type="id" name="parent_matrix" />
+    <item type="id" name="progress_circular" />
+    <item type="id" name="progress_horizontal" />
+    <item type="id" name="save_image_matrix" />
+    <item type="id" name="save_non_transition_alpha" />
+    <item type="id" name="save_scale_type" />
+    <item type="id" name="split_action_bar" />
+    <item type="id" name="tag_transition_group" />
+    <item type="id" name="text" />
+    <item type="id" name="text2" />
+    <item type="id" name="textinput_counter" />
+    <item type="id" name="textinput_error" />
+    <item type="id" name="title" />
+    <item type="id" name="transition_current_scene" />
+    <item type="id" name="transition_layout_save" />
+    <item type="id" name="transition_position" />
+    <item type="id" name="transition_scene_layoutid_cache" />
+    <item type="id" name="transition_transform" />
+    <item type="id" name="up" />
+    <item type="id" name="view_offset_helper" />
+    <item type="id" name="action_bar_title">false</item>
+    <item type="id" name="action_bar_subtitle">false</item>
+    <item type="id" name="action_mode_close_button">false</item>
+    <item type="id" name="activity_chooser_view_content">false</item>
+    <item type="id" name="expand_activities_button">false</item>
+    <item type="id" name="image">false</item>
+    <item type="id" name="default_activity_button">false</item>
+    <item type="id" name="list_item">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="buttonPanel">false</item>
+    <item type="id" name="spacer">false</item>
+    <item type="id" name="parentPanel">false</item>
+    <item type="id" name="contentPanel">false</item>
+    <item type="id" name="scrollIndicatorUp">false</item>
+    <item type="id" name="scrollView">false</item>
+    <item type="id" name="textSpacerNoTitle">false</item>
+    <item type="id" name="textSpacerNoButtons">false</item>
+    <item type="id" name="scrollIndicatorDown">false</item>
+    <item type="id" name="customPanel">false</item>
+    <item type="id" name="custom">false</item>
+    <item type="id" name="topPanel">false</item>
+    <item type="id" name="title_template">false</item>
+    <item type="id" name="alertTitle">false</item>
+    <item type="id" name="titleDividerNoCustom">false</item>
+    <item type="id" name="expanded_menu">false</item>
+    <item type="id" name="checkbox">false</item>
+    <item type="id" name="shortcut">false</item>
+    <item type="id" name="radio">false</item>
+    <item type="id" name="submenuarrow">false</item>
+    <item type="id" name="action_bar_root">false</item>
+    <item type="id" name="action_mode_bar_stub">false</item>
+    <item type="id" name="action_mode_bar">false</item>
+    <item type="id" name="decor_content_parent">false</item>
+    <item type="id" name="action_bar_container">false</item>
+    <item type="id" name="action_bar">false</item>
+    <item type="id" name="action_context_bar">false</item>
+    <item type="id" name="edit_query">false</item>
+    <item type="id" name="search_bar">false</item>
+    <item type="id" name="search_badge">false</item>
+    <item type="id" name="search_button">false</item>
+    <item type="id" name="search_edit_frame">false</item>
+    <item type="id" name="search_mag_icon">false</item>
+    <item type="id" name="search_plate">false</item>
+    <item type="id" name="search_src_text">false</item>
+    <item type="id" name="search_close_btn">false</item>
+    <item type="id" name="submit_area">false</item>
+    <item type="id" name="search_go_btn">false</item>
+    <item type="id" name="search_voice_btn">false</item>
+    <item type="id" name="select_dialog_listview">false</item>
+    <item type="id" name="com_facebook_fragment_container">false</item>
+    <item type="id" name="confirmation_code">false</item>
+    <item type="id" name="progress_bar">false</item>
+    <item type="id" name="com_facebook_device_auth_instructions">false</item>
+    <item type="id" name="cancel_button">false</item>
+    <item type="id" name="com_facebook_login_fragment_progress_bar">false</item>
+    <item type="id" name="com_facebook_smart_instructions_0">false</item>
+    <item type="id" name="com_facebook_smart_instructions_or">false</item>
+    <item type="id" name="com_facebook_body_frame">false</item>
+    <item type="id" name="com_facebook_tooltip_bubble_view_top_pointer">false</item>
+    <item type="id" name="com_facebook_button_xout">false</item>
+    <item type="id" name="com_facebook_tooltip_bubble_view_text_body">false</item>
+    <item type="id" name="com_facebook_tooltip_bubble_view_bottom_pointer">false</item>
+    <item type="id" name="smallLabel">false</item>
+    <item type="id" name="largeLabel">false</item>
+    <item type="id" name="container">false</item>
+    <item type="id" name="coordinator">false</item>
+    <item type="id" name="touch_outside">false</item>
+    <item type="id" name="design_bottom_sheet">false</item>
+    <item type="id" name="snackbar_text">false</item>
+    <item type="id" name="snackbar_action">false</item>
+    <item type="id" name="navigation_header_container">false</item>
+    <item type="id" name="design_navigation_view">false</item>
+    <item type="id" name="design_menu_item_text">false</item>
+    <item type="id" name="design_menu_item_action_area_stub">false</item>
+    <item type="id" name="design_menu_item_action_area">false</item>
+    <item type="id" name="text_input_password_toggle">false</item>
+    <item type="id" name="hs__conversation_icon">false</item>
+    <item type="id" name="hs__notification_badge_padding">false</item>
+    <item type="id" name="hs__notification_badge">false</item>
+    <item type="id" name="issue_publish_id_container">false</item>
+    <item type="id" name="issue_publish_id_header">false</item>
+    <item type="id" name="issue_publish_id">false</item>
+    <item type="id" name="issue_id_copy_btn">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="hs__messagesList">false</item>
+    <item type="id" name="hs__confirmation">false</item>
+    <item type="id" name="resolution_question_text">false</item>
+    <item type="id" name="resolution_rejected_button">false</item>
+    <item type="id" name="resolution_accepted_button">false</item>
+    <item type="id" name="relativeLayout1">false</item>
+    <item type="id" name="hs__messageText">false</item>
+    <item type="id" name="hs__sendMessageBtn">false</item>
+    <item type="id" name="ratingBar">false</item>
+    <item type="id" name="like_status">false</item>
+    <item type="id" name="additional_feedback">false</item>
+    <item type="id" name="submit">false</item>
+    <item type="id" name="csat_message">false</item>
+    <item type="id" name="csat_msg_container">false</item>
+    <item type="id" name="csat_like_msg">false</item>
+    <item type="id" name="csat_dislike_msg">false</item>
+    <item type="id" name="hs__csat_option">false</item>
+    <item type="id" name="option_text">false</item>
+    <item type="id" name="flow_list">false</item>
+    <item type="id" name="list_fragment_container">false</item>
+    <item type="id" name="vertical_divider">false</item>
+    <item type="id" name="select_question_view">false</item>
+    <item type="id" name="details_fragment_container">false</item>
+    <item type="id" name="single_question_container">false</item>
+    <item type="id" name="faq_fragment_container">false</item>
+    <item type="id" name="local_rsc_message">false</item>
+    <item type="id" name="user_message">false</item>
+    <item type="id" name="imageview_container">false</item>
+    <item type="id" name="user_attachment_imageview">false</item>
+    <item type="id" name="progressbar_container">false</item>
+    <item type="id" name="upload_attachment_progressbar">false</item>
+    <item type="id" name="text_retry">false</item>
+    <item type="id" name="sendingText">false</item>
+    <item type="id" name="footer_message">false</item>
+    <item type="id" name="hs__new_conversation">false</item>
+    <item type="id" name="csat_view_layout">false</item>
+    <item type="id" name="issue_archival_message_view_stub">false</item>
+    <item type="id" name="hs__new_conversation_btn">false</item>
+    <item type="id" name="agent_typing_container">false</item>
+    <item type="id" name="agent_typing_indicator">false</item>
+    <item type="id" name="admin_message">false</item>
+    <item type="id" name="progress">false</item>
+    <item type="id" name="download_button_ring">false</item>
+    <item type="id" name="download_icon">false</item>
+    <item type="id" name="attachment_icon">false</item>
+    <item type="id" name="attachment_file_name">false</item>
+    <item type="id" name="attachment_file_size">false</item>
+    <item type="id" name="attachment_date">false</item>
+    <item type="id" name="admin_attachment_imageview">false</item>
+    <item type="id" name="download_progressbar_container">false</item>
+    <item type="id" name="download_button">false</item>
+    <item type="id" name="download_attachment_progressbar">false</item>
+    <item type="id" name="date">false</item>
+    <item type="id" name="admin_attachment_request_text">false</item>
+    <item type="id" name="admin_attach_screenshot_button">false</item>
+    <item type="id" name="admin_date_text">false</item>
+    <item type="id" name="review_accepted_message_container">false</item>
+    <item type="id" name="review_accepted_message">false</item>
+    <item type="id" name="review_accepted_date">false</item>
+    <item type="id" name="review_request_message_container">false</item>
+    <item type="id" name="review_request_message">false</item>
+    <item type="id" name="review_request_button">false</item>
+    <item type="id" name="review_request_date">false</item>
+    <item type="id" name="admin_message_container">false</item>
+    <item type="id" name="admin_message_text">false</item>
+    <item type="id" name="user_message_container">false</item>
+    <item type="id" name="user_message_text">false</item>
+    <item type="id" name="user_date_text">false</item>
+    <item type="id" name="hs__conversationDetailWrapper">false</item>
+    <item type="id" name="hs__conversationDetail">false</item>
+    <item type="id" name="hs__usernameWrapper">false</item>
+    <item type="id" name="hs__username">false</item>
+    <item type="id" name="hs__emailWrapper">false</item>
+    <item type="id" name="hs__email">false</item>
+    <item type="id" name="screenshot_view_container">false</item>
+    <item type="id" name="hs__screenshot">false</item>
+    <item type="id" name="toolbar">false</item>
+    <item type="id" name="support_fragment_container">false</item>
+    <item type="id" name="question_list">false</item>
+    <item type="id" name="screenshot_preview">false</item>
+    <item type="id" name="screenshot_loading_indicator">false</item>
+    <item type="id" name="buttons_separator">false</item>
+    <item type="id" name="button_containers">false</item>
+    <item type="id" name="change">false</item>
+    <item type="id" name="secondary_button">false</item>
+    <item type="id" name="search_list">false</item>
+    <item type="id" name="contact_us_view">false</item>
+    <item type="id" name="search_list_footer_divider">false</item>
+    <item type="id" name="contact_us_hint_text">false</item>
+    <item type="id" name="report_issue">false</item>
+    <item type="id" name="no_faqs_view">false</item>
+    <item type="id" name="send_anyway_button">false</item>
+    <item type="id" name="search_result_message">false</item>
+    <item type="id" name="search_result">false</item>
+    <item type="id" name="section_list">false</item>
+    <item type="id" name="pager_tabs">false</item>
+    <item type="id" name="view_pager_container">false</item>
+    <item type="id" name="section_pager">false</item>
+    <item type="id" name="faq_content_view">false</item>
+    <item type="id" name="web_view">false</item>
+    <item type="id" name="question_footer">false</item>
+    <item type="id" name="question_footer_message">false</item>
+    <item type="id" name="unhelpful_button">false</item>
+    <item type="id" name="helpful_button">false</item>
+    <item type="id" name="contact_us_button">false</item>
+    <item type="id" name="view_no_faqs">false</item>
+    <item type="id" name="view_faqs_loading">false</item>
+    <item type="id" name="textViewLoadingText">false</item>
+    <item type="id" name="view_faqs_load_error">false</item>
+    <item type="id" name="textViewFailureMessage">false</item>
+    <item type="id" name="button_retry">false</item>
+    <item type="id" name="flow_fragment_container">false</item>
+    <item type="id" name="hs_logo">false</item>
+    <item type="id" name="messenger_send_button">false</item>
+    <item type="id" name="action_container">false</item>
+    <item type="id" name="action_image">false</item>
+    <item type="id" name="action_text">false</item>
+    <item type="id" name="action0">false</item>
+    <item type="id" name="cancel_action">false</item>
+    <item type="id" name="status_bar_latest_event_content">false</item>
+    <item type="id" name="media_actions">false</item>
+    <item type="id" name="action_divider">false</item>
+    <item type="id" name="notification_main_column_container">false</item>
+    <item type="id" name="notification_main_column">false</item>
+    <item type="id" name="right_side">false</item>
+    <item type="id" name="time">false</item>
+    <item type="id" name="chronometer">false</item>
+    <item type="id" name="info">false</item>
+    <item type="id" name="right_icon">false</item>
+    <item type="id" name="notification_background">false</item>
+    <item type="id" name="actions">false</item>
+    <item type="id" name="icon_group">false</item>
+    <item type="id" name="end_padder">false</item>
+    <item type="id" name="message">false</item>
+    <item type="id" name="visible">false</item>
+    <item type="id" name="masked">false</item>
+    <item type="id" name="hs__search">false</item>
+    <item type="id" name="hs__contact_us">false</item>
+    <item type="id" name="hs__action_done">false</item>
+    <item type="id" name="hs__attach_screenshot">false</item>
+    <item type="id" name="hs__start_new_conversation">false</item>
+    <item type="id" name="hs__conversation_information">false</item>
+</resources>

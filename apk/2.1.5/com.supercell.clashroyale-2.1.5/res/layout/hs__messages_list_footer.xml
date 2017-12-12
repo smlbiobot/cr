@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="?android:windowBackground" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin_small"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorSecondary" android:gravity="center_horizontal" android:id="@id/footer_message" android:paddingTop="@dimen/activity_horizontal_margin_medium" android:paddingBottom="@dimen/activity_horizontal_margin_small" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/hs__new_conversation" android:background="?hs__footerPromptBackground" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_medium">
+        <View android:background="?hs__separatorColor" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="16.0dip" />
+        <include android:id="@id/csat_view_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/hs__csat_holder" />
+        <include android:id="@id/issue_archival_message_view_stub" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/hs__issue_archival_message_view_holder" />
+        <com.helpshift.views.HSButton android:id="@id/hs__new_conversation_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.0dip" android:text="@string/hs__new_conversation_btn" style="@style/Helpshift.Style.BorderlessButton" />
+    </LinearLayout>
+</LinearLayout>

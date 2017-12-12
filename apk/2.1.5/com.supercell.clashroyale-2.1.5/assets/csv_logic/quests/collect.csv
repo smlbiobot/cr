@@ -1,0 +1,8 @@
+Name,Size,Title,Info,ItemFile,ItemExportName,Count,DataType,Resource,Rarity,BaseChest,Weight,MinArena,MaxArena
+String,Int,String,String,String,String,Int,String,String,String,String,int,String,String
+Collect_Quest_Chests,0,TID_COLLECT_QUEST_CHEST,TID_COLLECT_QUEST_CHEST_INFO,sc/ui.sc,quest_item_pvp,10,Chest,,,,100,,
+Collect_Quest_Cards1,0,TID_COLLECT_QUEST_CARDS,TID_COLLECT_QUEST_CARDS_INFO,sc/ui.sc,quest_item_pvp,50,Card,,,,100,,Arena2
+Collect_Quest_Cards2,0,TID_COLLECT_QUEST_CARDS,TID_COLLECT_QUEST_CARDS_INFO,sc/ui.sc,quest_item_pvp,100,Card,,,,100,Arena3,Arena4
+Collect_Quest_Cards3,0,TID_COLLECT_QUEST_CARDS,TID_COLLECT_QUEST_CARDS_INFO,sc/ui.sc,quest_item_pvp,200,Card,,,,100,Arena5,Arena6
+Collect_Quest_Cards4,0,TID_COLLECT_QUEST_CARDS,TID_COLLECT_QUEST_CARDS_INFO,sc/ui.sc,quest_item_pvp,300,Card,,,,100,Arena7,Arena8
+Collect_Quest_Cards5,0,TID_COLLECT_QUEST_CARDS,TID_COLLECT_QUEST_CARDS_INFO,sc/ui.sc,quest_item_pvp,500,Card,,,,100,Arena9,

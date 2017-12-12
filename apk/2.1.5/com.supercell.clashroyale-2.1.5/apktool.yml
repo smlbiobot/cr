@@ -1,0 +1,30 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com.supercell.clashroyale-2.1.5.apk
+compressionType: false
+doNotCompress:
+- arsc
+- csv
+- sc
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '15'
+  targetSdkVersion: '26'
+sharedLibrary: false
+unknownFiles:
+  build-data.properties: '8'
+  protobuf.meta: '8'
+  error_prone/Annotations.gwt.xml: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+  third_party/java_src/error_prone/project/annotations/Annotations.gwt.xml: '8'
+  third_party/java_src/error_prone/project/annotations/Google_internal.gwt.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.0
+versionInfo:
+  versionCode: '242'
+  versionName: 2.1.5

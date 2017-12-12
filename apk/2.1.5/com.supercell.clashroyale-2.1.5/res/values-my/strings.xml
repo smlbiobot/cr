@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">မူလနေရာကို သွားရန်</string>
+    <string name="abc_action_bar_up_description">အပေါ်သို့သွားရန်</string>
+    <string name="abc_action_menu_overflow_description">ပိုမိုရွေးချယ်စရာများ</string>
+    <string name="abc_action_mode_done">ပြီးဆုံးပါပြီ</string>
+    <string name="abc_activity_chooser_view_see_all">အားလုံးကို ကြည့်ရန်</string>
+    <string name="abc_activitychooserview_choose_application">အက်ပ်တစ်ခုခုကို ရွေးချယ်ပါ</string>
+    <string name="abc_capital_off">ပိတ်</string>
+    <string name="abc_capital_on">ဖွင့်</string>
+    <string name="abc_search_hint">ရှာဖွေပါ...</string>
+    <string name="abc_searchview_description_clear">ရှာစရာ အချက်အလက်များ ဖယ်ရှားရန်</string>
+    <string name="abc_searchview_description_query">ရှာစရာ အချက်အလက်နေရာ</string>
+    <string name="abc_searchview_description_search">ရှာဖွေရန်</string>
+    <string name="abc_searchview_description_submit">ရှာဖွေစရာ အချက်အလက်ကို ပေးပို့ရန်</string>
+    <string name="abc_searchview_description_voice">အသံဖြင့် ရှာဖွေခြင်း</string>
+    <string name="abc_shareactionprovider_share_with">မျှဝေဖို့ ရွေးပါ</string>
+    <string name="abc_shareactionprovider_share_with_application">%s ဖြင့် မျှဝေရန်</string>
+    <string name="abc_toolbar_collapse_description">ခေါက်ရန်</string>
+    <string name="common_google_play_services_enable_button">ဖွင့်ရန်</string>
+    <string name="common_google_play_services_enable_text">Google Play ဝန်ဆောင်မှုများကို မဖွင့်သ၍ %1$s သည်အလုပ်လုပ်မည်မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_enable_title">Google Play ဝန်ဆောင်မှုများ ဖွင့်ရန်</string>
+    <string name="common_google_play_services_install_button">ထည့်သွင်းပါ</string>
+    <string name="common_google_play_services_install_text">သင့်တက်ဘလက်တွင် Google Play ဝန်ဆောင်မှုများမရှိသောကြောင့် %1$s ကိုဖွင့်၍မရပါ။</string>
+    <string name="common_google_play_services_install_title">Google Play ဝန်ဆောင်မှုများရယူရန်</string>
+    <string name="common_google_play_services_notification_ticker">Google Play ဝန်ဆောင်မှုများ အမှား</string>
+    <string name="common_google_play_services_unknown_issue">%1$s သည် Google Play ဝန်ဆောင်မှုများနှင့် ပြဿနာအနည်းငယ် ရှိနေပါသည်။ ထပ်လုပ်ကြည့်ပါ။</string>
+    <string name="common_google_play_services_unsupported_text">Google Play ဝန်ဆောင်မှုများကို သင့်စက်ပစ္စည်းတွင် ပံ့ပိုးမထားသည့်အတွက် ၎င်းမရှိဘဲ %1$s ကို ဖွင့်၍မရပါ။</string>
+    <string name="common_google_play_services_update_button">အပ်ဒိတ်</string>
+    <string name="common_google_play_services_update_text">Google Play ဝန်ဆောင်မှုများအား အပ်ဒိတ်မလုပ်ပါက %1$s အလုပ်လုပ်မည် မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_update_title">Google Play ဝန်ဆောင်မှုများကို အပ်ဒိတ်လုပ်ရန်</string>
+    <string name="common_google_play_services_updating_text">Google Play ဝန်ဆောင်မှုများကို လက်ရှိအပ်ဒိတ်လုပ်နေသောကြောင့် %1$s ကိုဖွင့်၍ရမည်မဟုတ်ပါ။</string>
+    <string name="common_google_play_services_wear_update_text">Google Play ဝန်ဆောင်မှုဗားရှင်းအသစ်များ လိုအပ်နေသည်။ အချိန်အနည်းငယ်အကြာတွင် ၎င်းကိုယ်တိုင်အပ်ဒိတ်လုပ်ပါ လိမ့်မည်။</string>
+    <string name="common_open_on_phone">ဖုန်းပေါ်မှာ ဖွင့်ပါ</string>
+    <string name="common_signin_button_text">လက်မှတ်ထိုး ဝင်ရန်</string>
+    <string name="common_signin_button_text_long">Google ဖြင့် လက်မှတ်ထိုးဝင်ရေ</string>
+    <string name="search_menu_title">ရှာဖွေပါ</string>
+    <string name="status_bar_notification_info_overflow">၉၉၉+</string>
+</resources>

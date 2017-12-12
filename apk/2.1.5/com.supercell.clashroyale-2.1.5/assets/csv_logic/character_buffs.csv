@@ -1,0 +1,16 @@
+"Name","Rarity","TID","IconFileName","IconExportName","NoEffectToCrownTowers","CrownTowerDamagePercent","DamagePerSecond","HitFrequency","DamageReduction","HealPerSecond","HitSpeedMultiplier","SpeedMultiplier","SpawnSpeedMultiplier","Invisible","RemoveOnAttack","RemoveOnHeal","DamageMultiplier","Effect","FilterFile","FilterExportName","FilterAffectsTransformation","FilterInheritLifeDuration","IgnorePushBack","MarkEffect","AudioPitchModifier","PortalSpell","AttractPercentage","ControlledByParent","Clone","Scale","EnableStacking","ChainedBuff","ContinuousEffect","Charge"
+"String","String","String","String","String","Boolean","int","int","int","int","int","int","int","int","Boolean","Boolean","Boolean","int","String","String","String","boolean","boolean","boolean","String","int","String","int","boolean","boolean","int","boolean","string","string","boolean"
+"Rage","Epic","TID_SPELL_RAGE",,,,,,,,,135,135,135,,,,,"Spell_rage_hit_effect","sc/effects.sc","filter_rage",,,,"Healing",125,,,,,,,,,
+"Freeze","Epic","TID_SPELL_FREEZE",,,,,,,,,-100,-100,-100,,,,,,"sc/effects.sc","filter_cold",,,,,,,,,,,,,,
+"Poison","Epic","TID_SPELL_POISON",,,,-65,57,1000,,,,,,,,,,"PoisonSteam","sc/effects.sc","filter_poison",,,,,,,,,,,"TRUE",,,
+"IceWizardSlowDown","Legendary",,,,,,,,,,-35,-35,-35,,,,,,"sc/effects.sc","filter_cold",,,,"Healing",75,,,,,,,,,
+"ZapFreeze","Common","TID_SPELL_ZAP_FREEZE",,,,,,,,,-100,-100,-100,,,,,,"sc/effects.sc","filter_cold",,,,,,,,,,,,,,
+"Tornado","Epic","TID_SPELL_TORNADO",,,,-100,44,500,,,,,,,,,,,"sc/effects.sc","filter_poison",,,,"Healing",,,220,"true",,,"TRUE",,,
+"Clone","Epic","TID_SPELL_CLONE",,,,,,,,,-100,-100,-100,,,,,,,,,,,,,,,,"true",,,,,
+"Heal","Rare",,,,,,,500,,100,,,,,,,,,,,,,,,,,,,,,"TRUE",,,
+"Stun","Legendary",,,,,,,,,,-100,-100,-100,,,,,,,,,,,,,,,,,,,,,
+"Invisibility","Legendary",,,,,,,,,,,,,"TRUE",,,,,,,,,,,,,,,,,,,"ghost_aura",
+"Heal2","Legendary",,,,,,,50,,300,,,,,,,,,,,,,,,,,,,,,"TRUE",,,
+"Frozen1","Legendary",,,,,,,,,,-35,-35,-35,,,,,,"sc/effects.sc","filter_cold",,,,"Healing",75,,,,,,,"Frozen2",,
+"Frozen2","Legendary",,,,,,,,,,-70,-70,-70,,,,,,"sc/effects.sc","filter_cold",,,,"Healing",75,,,,,,,"Frozen3",,
+"Frozen3","Legendary",,,,,,,,,,-100,-100,-100,,,,,,"sc/effects.sc","filter_cold",,,,,,,,,,,,,,

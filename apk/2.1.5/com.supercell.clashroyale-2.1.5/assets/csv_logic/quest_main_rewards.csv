@@ -1,0 +1,10 @@
+"Name","Chest","QuestThreshold","ShopChest"
+"string","string","int","string"
+"GoldChest","Gold",50,
+"GiantChest","Giant",300,
+"EpicChest","Epic",350,
+"MagicalChest","Magic",300,
+"SuperMagicalChest","Super",500,
+"LegendaryChest","Legendary",400,
+"LightningChest","Shop_Small_1_Arena1",250,"Shop_Small_1"
+"LegendaryKingsChest","Shop_Large_Legendary_Arena7",500,"Shop_Large_Legendary"

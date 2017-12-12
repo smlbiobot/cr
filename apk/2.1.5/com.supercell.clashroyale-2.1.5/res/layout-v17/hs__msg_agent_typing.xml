@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:paddingTop="@dimen/hs__listPreferredItemPaddingTop" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:helpshift="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0" android:layout_marginStart="@dimen/activity_horizontal_margin_medium">
+        <LinearLayout android:gravity="center" android:id="@id/agent_typing_container" style="@style/Helpshift.Style.AdminTextMessageContainer">
+            <com.helpshift.support.views.HSTypingIndicatorView android:id="@id/agent_typing_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="12.0dip" android:layout_marginBottom="14.0dip" helpshift:hs__dotColor="?hs__typingIndicatorColor" helpshift:hs__interDotPadding="4.0dip" helpshift:hs__dotDiameter="8.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

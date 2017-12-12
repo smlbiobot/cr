@@ -1,0 +1,11 @@
+"Name","Type","MinArena","MaxArena","MechanicUnlock","Arena","Price","DailyCardRotation","DailyCardRotationChances","GuarenteedLegendary","3DAssetPath","NumRerolls","ShopPopupName","ShopContainerName","PopupContainerName","ChestOpeningContainerName","QuestContainerName","AnimationPrefix","HighlightWhenUnlocked","ChinaShopPopupName"
+"String","String","String","String","string","int","int","boolean","int","boolean","string","int","string","string","string","string","string","string","boolean","string"
+"Shop_Small_1","Lightning","Arena1",,,,250,,,,"sc3d/lightning_chest.scw",3,"popup_shop_chest_confirm_reshuffle","lightning_shop_container","lightning_popup_container","lightning_open_container","lightning_popup_quest","Lightning",,"popup_shop_chest_confirm_china_reshuffle"
+"Shop_Medium_0","Fortune",,"Arena4",,,750,,,,"sc3d/fortune_chest.scw",,"popup_shop_chest_confirm_fortune_lock","fortune_shop_container","fortune_popup_container","fortune_open_container",,"Fortune",,"popup_shop_chest_confirm_china_fortune_lock"
+"Shop_Medium_1","Fortune","Arena5",,,,750,"TRUE",40,,"sc3d/fortune_chest.scw",,"popup_shop_chest_confirm_fortune","fortune_shop_container","fortune_popup_container","fortune_open_container",,"Fortune","TRUE","popup_shop_chest_confirm_china_fortune"
+,,,,,,,,30,,,,,,,,,,,
+,,,,,,,,20,,,,,,,,,,,
+,,,,,,,,10,,,,,,,,,,,
+"Shop_Large","Kings",,"Arena6",,,2000,,,,"sc3d/kings_chest.scw",,"popup_shop_chest_confirm_king_draft_lock","kings_shop_container","kings_popup_container","kings_open_container",,"Kings",,"popup_shop_chest_confirm_china_king_draft_lock"
+"Shop_Large_Legendary","Kings","Arena7",,,,2500,,,"TRUE","sc3d/legendkings_chest.scw",,"popup_shop_chest_confirm_king_draft_legend","legendkings_shop_container","legendkings_popup_container","legendkings_open_container","legendkings_popup_quest","KingsL","TRUE","popup_shop_chest_confirm_china_king_draft_legend"
+"Chronos_Boost","Boost","Arena1",,,,750,,,,"sc3d/fortune_chest.scw#2",,"popup_shop_chest_confirm_fortune","fortune_shop_container_b","fortune_popup_container_b","fortune_open_container_b",,"Fortune",,"popup_shop_chest_confirm_china_fortune"

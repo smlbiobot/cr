@@ -1,0 +1,8 @@
+Name,Size,Title,Info,ItemFile,ItemExportName,Count,Rarity,Type,Weight,MinArena,MaxArena
+String,Int,String,String,String,String,Int,String,String,int,String,String
+Donate_Any1,0,TID_DONATE_QUEST_ANY,TID_DONATE_QUEST_ANY_INFO,sc/ui.sc,quest_item_pvp,4,,Donate,100,,Arena3
+Donate_Any2,0,TID_DONATE_QUEST_ANY,TID_DONATE_QUEST_ANY_INFO,sc/ui.sc,quest_item_pvp,20,,Donate,100,Arena4,Arena6
+Donate_Any3,0,TID_DONATE_QUEST_ANY,TID_DONATE_QUEST_ANY_INFO,sc/ui.sc,quest_item_pvp,30,,Donate,100,Arena7,Arena9
+Donate_Any4,0,TID_DONATE_QUEST_ANY,TID_DONATE_QUEST_ANY_INFO,sc/ui.sc,quest_item_pvp,40,,Donate,100,Arena_L,
+Donate_Rare,0,TID_DONATE_QUEST_RARITY,TID_DONATE_QUEST_RARITY_INFO,sc/ui.sc,quest_item_pvp,4,Rare,Donate,100,Arena4,
+Request_Any,0,TID_REQUEST_QUEST_ANY,TID_REQUEST_QUEST_ANY_INFO,sc/ui.sc,quest_item_pvp,3,,Request,100,,

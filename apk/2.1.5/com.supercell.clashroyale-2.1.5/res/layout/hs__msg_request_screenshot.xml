@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/activity_horizontal_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="start" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_weight="4.0">
+        <LinearLayout android:id="@id/admin_message" style="@style/Helpshift.Style.AdminTextMessageContainer">
+            <com.helpshift.views.HSTextView android:id="@id/admin_attachment_request_text" style="@style/Helpshift.Style.AdminTextMessage" />
+            <com.helpshift.views.HSButton android:id="@id/admin_attach_screenshot_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginTop="-8.0dip" android:text="@string/hs__attach_screenshot_btn" style="@style/Helpshift.Style.BorderlessButton" />
+        </LinearLayout>
+        <com.helpshift.views.HSTextView android:id="@id/admin_date_text" style="@style/Helpshift.Style.AdminMessageDate" />
+    </LinearLayout>
+    <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,482 @@
+.class public Lcom/helpshift/support/b/a;
+.super Lcom/helpshift/support/fragments/h;
+
+# interfaces
+.implements Lcom/helpshift/support/d/b;
+
+
+# instance fields
+.field public a:I
+
+.field public b:Lcom/helpshift/support/FaqTagFilter;
+
+.field public c:Lcom/helpshift/support/j;
+
+.field d:Z
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Lcom/helpshift/support/fragments/h;-><init>()V
+
+    const/4 v0, 0x0
+
+    iput v0, p0, Lcom/helpshift/support/b/a;->a:I
+
+    return-void
+.end method
+
+.method public static a(Landroid/os/Bundle;)Lcom/helpshift/support/b/a;
+    .locals 1
+
+    new-instance v0, Lcom/helpshift/support/b/a;
+
+    invoke-direct {v0}, Lcom/helpshift/support/b/a;-><init>()V
+
+    invoke-virtual {v0, p0}, Lcom/helpshift/support/b/a;->setArguments(Landroid/os/Bundle;)V
+
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final a()Lcom/helpshift/support/d/c;
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/helpshift/support/b/a;->getParentFragment()Landroid/support/v4/app/Fragment;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/helpshift/support/d/b;
+
+    invoke-interface {v0}, Lcom/helpshift/support/d/b;->a()Lcom/helpshift/support/d/c;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public final a(I)V
+    .locals 5
+
+    const/4 v4, 0x1
+
+    const/16 v3, 0x8
+
+    const/4 v2, 0x0
+
+    invoke-virtual {p0}, Lcom/helpshift/support/b/a;->getParentFragment()Landroid/support/v4/app/Fragment;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/helpshift/support/fragments/e;
+
+    const/4 v1, 0x0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/helpshift/support/fragments/e;->getParentFragment()Landroid/support/v4/app/Fragment;
+
+    move-result-object v1
+
+    check-cast v1, Lcom/helpshift/support/fragments/ac;
+
+    :cond_0
+    if-eqz v1, :cond_1
+
+    if-ne p1, v4, :cond_2
+
+    invoke-virtual {v0, v4}, Lcom/helpshift/support/fragments/e;->b(Z)V
+
+    invoke-virtual {v0}, Lcom/helpshift/support/fragments/e;->d()V
+
+    :goto_0
+    iget-object v0, v1, Lcom/helpshift/support/fragments/ac;->d:Landroid/view/View;
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, v1, Lcom/helpshift/support/fragments/ac;->e:Landroid/view/View;
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    iget-object v0, v1, Lcom/helpshift/support/fragments/ac;->i:Landroid/view/View;
+
+    invoke-virtual {v0, v3}, Landroid/view/View;->setVisibility(I)V
+
+    packed-switch p1, :pswitch_data_0
+
+    :cond_1
+    :goto_1
+    :pswitch_0
+    return-void
+
+    :cond_2
+    invoke-virtual {v0, v2}, Lcom/helpshift/support/fragments/e;->b(Z)V
+
+    invoke-virtual {v0, v2}, Lcom/helpshift/support/fragments/e;->a(Z)V
+
+    goto :goto_0
+
+    :pswitch_1
+    iget-object v0, v1, Lcom/helpshift/support/fragments/ac;->e:Landroid/view/View;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_1
+
+    :pswitch_2
+    iget-object v0, v1, Lcom/helpshift/support/fragments/ac;->d:Landroid/view/View;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_1
+
+    :pswitch_3
+    iget-object v0, v1, Lcom/helpshift/support/fragments/ac;->i:Landroid/view/View;
+
+    invoke-virtual {v0, v2}, Landroid/view/View;->setVisibility(I)V
+
+    goto :goto_1
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x0
+        :pswitch_1
+        :pswitch_0
+        :pswitch_2
+        :pswitch_3
+    .end packed-switch
+.end method
+
+.method final a(Lcom/helpshift/support/b/a;Ljava/util/ArrayList;)V
+    .locals 7
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Lcom/helpshift/support/b/a;",
+            "Ljava/util/ArrayList",
+            "<",
+            "Lcom/helpshift/support/Section;",
+            ">;)V"
+        }
+    .end annotation
+
+    const/4 v3, 0x0
+
+    invoke-virtual {p1}, Lcom/helpshift/support/b/a;->h()Landroid/support/v4/app/FragmentManager;
+
+    move-result-object v0
+
+    sget v1, Lcom/helpshift/R$id;->faq_fragment_container:I
+
+    invoke-virtual {v0, v1}, Landroid/support/v4/app/FragmentManager;->findFragmentById(I)Landroid/support/v4/app/Fragment;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_1
+
+    iget-boolean v0, p0, Lcom/helpshift/support/b/a;->d:Z
+
+    if-nez v0, :cond_1
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    iget-object v0, p1, Lcom/helpshift/support/b/a;->c:Lcom/helpshift/support/j;
+
+    iget-object v1, p1, Lcom/helpshift/support/b/a;->b:Lcom/helpshift/support/FaqTagFilter;
+
+    invoke-virtual {v0, p2, v1}, Lcom/helpshift/support/j;->a(Ljava/util/ArrayList;Lcom/helpshift/support/FaqTagFilter;)Ljava/util/ArrayList;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    const/4 v2, 0x1
+
+    if-ne v1, v2, :cond_2
+
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    const-string/jumbo v2, "sectionPublishId"
+
+    invoke-virtual {v0, v3}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/helpshift/support/Section;
+
+    iget-object v0, v0, Lcom/helpshift/support/Section;->c:Ljava/lang/String;
+
+    invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    const-string/jumbo v0, "withTagsMatching"
+
+    invoke-virtual {p0}, Lcom/helpshift/support/b/a;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "withTagsMatching"
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v0, v2}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
+
+    invoke-static {v1}, Lcom/helpshift/support/fragments/i;->a(Landroid/os/Bundle;)Lcom/helpshift/support/fragments/i;
+
+    move-result-object v2
+
+    :try_start_0
+    invoke-virtual {p1}, Lcom/helpshift/support/b/a;->h()Landroid/support/v4/app/FragmentManager;
+
+    move-result-object v0
+
+    sget v1, Lcom/helpshift/R$id;->faq_fragment_container:I
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    iget-boolean v6, p0, Lcom/helpshift/support/b/a;->d:Z
+
+    invoke-static/range {v0 .. v6}, Lcom/helpshift/support/util/c;->a(Landroid/support/v4/app/FragmentManager;ILandroid/support/v4/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/helpshift/support/b/a;->d:Z
+    :try_end_0
+    .catch Ljava/lang/IllegalStateException; {:try_start_0 .. :try_end_0} :catch_1
+
+    :goto_1
+    invoke-static {p0}, Lcom/helpshift/support/util/c;->a(Landroid/support/v4/app/Fragment;)Lcom/helpshift/support/fragments/ac;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    invoke-virtual {v0}, Lcom/helpshift/support/fragments/ac;->c()V
+
+    goto :goto_0
+
+    :cond_2
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    const-string/jumbo v2, "sections"
+
+    invoke-virtual {v1, v2, v0}, Landroid/os/Bundle;->putParcelableArrayList(Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    const-string/jumbo v0, "withTagsMatching"
+
+    invoke-virtual {p0}, Lcom/helpshift/support/b/a;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v2
+
+    const-string/jumbo v3, "withTagsMatching"
+
+    invoke-virtual {v2, v3}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v0, v2}, Landroid/os/Bundle;->putSerializable(Ljava/lang/String;Ljava/io/Serializable;)V
+
+    new-instance v2, Lcom/helpshift/support/fragments/x;
+
+    invoke-direct {v2}, Lcom/helpshift/support/fragments/x;-><init>()V
+
+    invoke-virtual {v2, v1}, Lcom/helpshift/support/fragments/x;->setArguments(Landroid/os/Bundle;)V
+
+    :try_start_1
+    invoke-virtual {p1}, Lcom/helpshift/support/b/a;->h()Landroid/support/v4/app/FragmentManager;
+
+    move-result-object v0
+
+    sget v1, Lcom/helpshift/R$id;->faq_fragment_container:I
+
+    const/4 v3, 0x0
+
+    const/4 v4, 0x0
+
+    const/4 v5, 0x0
+
+    iget-boolean v6, p0, Lcom/helpshift/support/b/a;->d:Z
+
+    invoke-static/range {v0 .. v6}, Lcom/helpshift/support/util/c;->a(Landroid/support/v4/app/FragmentManager;ILandroid/support/v4/app/Fragment;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    const/4 v0, 0x0
+
+    iput-boolean v0, p0, Lcom/helpshift/support/b/a;->d:Z
+    :try_end_1
+    .catch Ljava/lang/IllegalStateException; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_1
+
+    :catch_0
+    move-exception v0
+
+    goto :goto_1
+
+    :catch_1
+    move-exception v0
+
+    goto :goto_1
+.end method
+
+.method public final b()Z
+    .locals 1
+
+    const/4 v0, 0x1
+
+    return v0
+.end method
+
+.method public onAttach(Landroid/content/Context;)V
+    .locals 1
+
+    invoke-super {p0, p1}, Lcom/helpshift/support/fragments/h;->onAttach(Landroid/content/Context;)V
+
+    new-instance v0, Lcom/helpshift/support/j;
+
+    invoke-direct {v0, p1}, Lcom/helpshift/support/j;-><init>(Landroid/content/Context;)V
+
+    iput-object v0, p0, Lcom/helpshift/support/b/a;->c:Lcom/helpshift/support/j;
+
+    return-void
+.end method
+
+.method public onCreate(Landroid/os/Bundle;)V
+    .locals 2
+
+    invoke-super {p0, p1}, Lcom/helpshift/support/fragments/h;->onCreate(Landroid/os/Bundle;)V
+
+    invoke-virtual {p0}, Lcom/helpshift/support/b/a;->getArguments()Landroid/os/Bundle;
+
+    move-result-object v0
+
+    if-eqz v0, :cond_0
+
+    const-string/jumbo v1, "withTagsMatching"
+
+    invoke-virtual {v0, v1}, Landroid/os/Bundle;->getSerializable(Ljava/lang/String;)Ljava/io/Serializable;
+
+    move-result-object v0
+
+    check-cast v0, Lcom/helpshift/support/FaqTagFilter;
+
+    iput-object v0, p0, Lcom/helpshift/support/b/a;->b:Lcom/helpshift/support/FaqTagFilter;
+
+    :cond_0
+    return-void
+.end method
+
+.method public onCreateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    .locals 2
+    .annotation build Landroid/support/annotation/Nullable;
+    .end annotation
+
+    sget v0, Lcom/helpshift/R$layout;->hs__faq_fragment:I
+
+    const/4 v1, 0x0
+
+    invoke-virtual {p1, v0, p2, v1}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;Z)Landroid/view/View;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public onDestroyView()V
+    .locals 1
+
+    invoke-virtual {p0}, Lcom/helpshift/support/b/a;->getView()Landroid/view/View;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcom/helpshift/support/util/i;->a(Landroid/view/View;)V
+
+    invoke-super {p0}, Lcom/helpshift/support/fragments/h;->onDestroyView()V
+
+    return-void
+.end method
+
+.method public onResume()V
+    .locals 4
+
+    invoke-super {p0}, Lcom/helpshift/support/fragments/h;->onResume()V
+
+    sget v0, Lcom/helpshift/R$string;->hs__help_header:I
+
+    invoke-virtual {p0, v0}, Lcom/helpshift/support/b/a;->getString(I)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p0, v0}, Lcom/helpshift/support/b/a;->b(Ljava/lang/String;)V
+
+    iget v0, p0, Lcom/helpshift/support/b/a;->a:I
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    invoke-virtual {p0, v0}, Lcom/helpshift/support/b/a;->a(I)V
+
+    :cond_0
+    iget-object v0, p0, Lcom/helpshift/support/b/a;->c:Lcom/helpshift/support/j;
+
+    new-instance v1, Lcom/helpshift/support/b/c;
+
+    invoke-direct {v1, p0}, Lcom/helpshift/support/b/c;-><init>(Lcom/helpshift/support/b/a;)V
+
+    new-instance v2, Lcom/helpshift/support/b/b;
+
+    invoke-direct {v2, p0}, Lcom/helpshift/support/b/b;-><init>(Lcom/helpshift/support/b/a;)V
+
+    iget-object v3, p0, Lcom/helpshift/support/b/a;->b:Lcom/helpshift/support/FaqTagFilter;
+
+    invoke-virtual {v0, v1, v2, v3}, Lcom/helpshift/support/j;->a(Landroid/os/Handler;Landroid/os/Handler;Lcom/helpshift/support/FaqTagFilter;)V
+
+    iget-boolean v0, p0, Lcom/helpshift/support/fragments/h;->g:Z
+
+    if-nez v0, :cond_1
+
+    invoke-static {}, Lcom/helpshift/util/t;->d()Lcom/helpshift/c;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Lcom/helpshift/c;->f()Lcom/helpshift/analytics/a/a;
+
+    move-result-object v0
+
+    sget-object v1, Lcom/helpshift/analytics/AnalyticsEventType;->d:Lcom/helpshift/analytics/AnalyticsEventType;
+
+    invoke-virtual {v0, v1}, Lcom/helpshift/analytics/a/a;->a(Lcom/helpshift/analytics/AnalyticsEventType;)V
+
+    :cond_1
+    return-void
+.end method
+
+.method public onStop()V
+    .locals 1
+
+    invoke-super {p0}, Lcom/helpshift/support/fragments/h;->onStop()V
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p0, v0}, Lcom/helpshift/support/b/a;->a(I)V
+
+    return-void
+.end method

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeMedium" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:gravity="center_vertical" android:background="?selectableItemBackground" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingTop="@dimen/hs_support_recyclerview_item_vertical_padding" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:paddingBottom="@dimen/hs_support_recyclerview_item_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip" android:maxLines="@integer/hs__faqs_list_item_max_lines"
+  xmlns:android="http://schemas.android.com/apk/res/android" />
