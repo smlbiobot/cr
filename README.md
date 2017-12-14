@@ -10,7 +10,7 @@ Since this repo is getting somewhat large, additional repositories have been cre
 
 Assets were extracted from the Clash Royale APK using publicly available scripts.
 
-* Latest version: 2.0.1 (released on October 17, 2017)
+* Latest version: 2.1.5 (released on December 12, 2017)
 
 ### Image assets (*.SC)
 
@@ -22,6 +22,13 @@ Additionally, sc_decode is used to turn the sprites into useful frames.
 
 * Source: https://github.com/umop-aplsdn/sc_decode
 * High-Res / Low-Res capable Fork: https://github.com/Galaxy1036/sc_decode
+
+#### High Res Images
+
+The apk comes with low-res images only. In order to get the high-res assets, you will need a rooted Android (rooted emulator like Nox also works). 
+
+You will find anything that’s downloaded from the SC server inside:
+/data/data/com.supercell.clashroyale/update
 
 ### CSV files decryption
 
