@@ -2,6 +2,7 @@
 
 Since this repo is getting somewhat large, additional repositories have been created which contain subsets of content in this repo:
 
+* [cr-assets-png](https://github.com/smlbiobot/cr-assets-png): contains only image assets from the APK. Image spirtes, logos, UIs, etc.
 * [cr-csv](https://github.com/smlbiobot/cr-csv): contains only the CSV files extracted from the APK. 
 * [cr-cardgen](https://github.com/smlbiobot/cr-cardgen): Card image generation scripts, with each version tagged as individual releases.
 * [cr-fankit-official](https://github.com/smlbiobot/cr-fankit-official): Supercell has released a [Dropbox with official fan content](https://www.dropbox.com/sh/j6ropqjysukhj3s/AADsjq5jBAEugSXv7IkghAfca?dl=0). This a mirror of that Dropbox content. 
