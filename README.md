@@ -11,7 +11,7 @@ Since this repo is getting somewhat large, additional repositories have been cre
 
 Assets were extracted from the Clash Royale APK using publicly available scripts.
 
-* Latest version: 2.1.5 (released on December 12, 2017)
+* Latest version: 2.2.1 (released on April 25, 2017)
 
 ### Image assets (*.SC)
 
