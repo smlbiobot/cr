@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_horizontal_margin_large"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RatingBar android:id="@id/ratingBar" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:stepSize="1.0" android:layout_centerHorizontal="true" style="@style/Helpshift.Style.RatingBar" />
+    <com.helpshift.views.HSTextView android:textColor="?android:textColorSecondary" android:id="@id/like_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_small" android:layout_below="@id/ratingBar" android:layout_centerHorizontal="true" />
+    <com.helpshift.views.HSEditText android:gravity="top" android:id="@id/additional_feedback" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_medium" android:hint="@string/hs__csat_additonal_feedback_message" android:maxLines="4" android:minLines="2" android:layout_below="@id/like_status" />
+    <com.helpshift.views.HSButton android:id="@id/submit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin_small" android:text="@string/hs__submit_conversation_btn" android:layout_below="@id/additional_feedback" android:layout_alignParentRight="true" style="@style/Helpshift.Style.BorderlessButton" />
+    <View android:id="@id/divider" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+</RelativeLayout>

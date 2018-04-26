@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">サービスを「%dつ星」として評価しました。</item>
+        <item quantity="one">サービスを「1つ星」として評価しました。</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">サポートからの新しいメッセージが%d件あります</item>
+        <item quantity="one">サポートからの新規メッセージ</item>
+    </plurals>
+</resources>

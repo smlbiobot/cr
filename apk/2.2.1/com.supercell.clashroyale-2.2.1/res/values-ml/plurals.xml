@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">നിങ്ങൾ സേവനത്തിന് %d നക്ഷത്രങ്ങൾ നൽകി.</item>
+        <item quantity="one">നിങ്ങൾ സേവനത്തിന് 1 നക്ഷത്രം നൽകി.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d പിന്തുണയിൽ നിന്നുള്ള പുതിയ സന്ദേശം</item>
+        <item quantity="one">പിന്തുണയിൽ നിന്നുള്ള പുതിയ സന്ദേശം</item>
+    </plurals>
+</resources>

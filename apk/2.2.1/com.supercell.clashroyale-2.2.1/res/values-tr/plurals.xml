@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Hizmet için %d yıldız verdin.</item>
+        <item quantity="one">Hizmet için 1 yıldız verdin.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">Destek bölümünden %d yeni mesaj</item>
+        <item quantity="one">Destek bölümünden yeni mesaj</item>
+    </plurals>
+</resources>

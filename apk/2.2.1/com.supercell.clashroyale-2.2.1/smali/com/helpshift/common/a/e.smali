@@ -1,0 +1,332 @@
+.class public Lcom/helpshift/common/a/e;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static final a:Ljava/lang/Integer;
+
+
+# instance fields
+.field final A:Ljava/lang/String;
+
+.field final B:Ljava/lang/String;
+
+.field final C:Ljava/lang/String;
+
+.field final D:Ljava/lang/String;
+
+.field final E:Ljava/lang/String;
+
+.field private F:Ljava/lang/String;
+
+.field private G:Ljava/lang/String;
+
+.field private final H:Ljava/lang/String;
+
+.field private final I:Ljava/lang/String;
+
+.field final b:Ljava/lang/String;
+
+.field final c:Ljava/lang/String;
+
+.field final d:Ljava/lang/String;
+
+.field final e:Ljava/lang/String;
+
+.field final f:Ljava/lang/String;
+
+.field final g:Ljava/lang/String;
+
+.field final h:Ljava/lang/String;
+
+.field final i:Ljava/lang/String;
+
+.field final j:Ljava/lang/String;
+
+.field final k:Ljava/lang/String;
+
+.field final l:Ljava/lang/String;
+
+.field final m:Ljava/lang/String;
+
+.field final n:Ljava/lang/String;
+
+.field final o:Ljava/lang/String;
+
+.field final p:Ljava/lang/String;
+
+.field final q:Ljava/lang/String;
+
+.field final r:Ljava/lang/String;
+
+.field final s:Ljava/lang/String;
+
+.field final t:Ljava/lang/String;
+
+.field final u:Ljava/lang/String;
+
+.field final v:Ljava/lang/String;
+
+.field final w:Ljava/lang/String;
+
+.field final x:Ljava/lang/String;
+
+.field public y:Ljava/lang/String;
+
+.field final z:Ljava/lang/String;
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    const/4 v0, 0x5
+
+    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v0
+
+    sput-object v0, Lcom/helpshift/common/a/e;->a:Ljava/lang/Integer;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 1
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    const-string/jumbo v0, "issues"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->b:Ljava/lang/String;
+
+    const-string/jumbo v0, "_id"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->c:Ljava/lang/String;
+
+    const-string/jumbo v0, "server_id"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->d:Ljava/lang/String;
+
+    const-string/jumbo v0, "publish_id"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->e:Ljava/lang/String;
+
+    const-string/jumbo v0, "profile_id"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->f:Ljava/lang/String;
+
+    const-string/jumbo v0, "title"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->g:Ljava/lang/String;
+
+    const-string/jumbo v0, "created_at"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->h:Ljava/lang/String;
+
+    const-string/jumbo v0, "updated_at"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->i:Ljava/lang/String;
+
+    const-string/jumbo v0, "status"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->j:Ljava/lang/String;
+
+    const-string/jumbo v0, "show_agent_name"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->k:Ljava/lang/String;
+
+    const-string/jumbo v0, "message_cursor"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->l:Ljava/lang/String;
+
+    const-string/jumbo v0, "start_new_conversation_action"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->m:Ljava/lang/String;
+
+    const-string/jumbo v0, "CREATE TABLE issues ( _id INTEGER PRIMARY KEY AUTOINCREMENT,server_id TEXT, publish_id TEXT, profile_id TEXT NOT NULL, title TEXT NOT NULL,status INTEGER NOT NULL,show_agent_name INTEGER,message_cursor TEXT,start_new_conversation_action INTEGER,meta TEXT,created_at TEXT NOT NULL,updated_at TEXT NOT NULL );"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->F:Ljava/lang/String;
+
+    const-string/jumbo v0, "conversation_inbox"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->n:Ljava/lang/String;
+
+    const-string/jumbo v0, "form_name"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->o:Ljava/lang/String;
+
+    const-string/jumbo v0, "form_email"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->p:Ljava/lang/String;
+
+    const-string/jumbo v0, "description_draft"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->q:Ljava/lang/String;
+
+    const-string/jumbo v0, "description_draft_timestamp"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->r:Ljava/lang/String;
+
+    const-string/jumbo v0, "attachment_draft"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->s:Ljava/lang/String;
+
+    const-string/jumbo v0, "description_type"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->t:Ljava/lang/String;
+
+    const-string/jumbo v0, "archival_text"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->u:Ljava/lang/String;
+
+    const-string/jumbo v0, "reply_text"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->v:Ljava/lang/String;
+
+    const-string/jumbo v0, "persist_message_box"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->w:Ljava/lang/String;
+
+    const-string/jumbo v0, "since"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->x:Ljava/lang/String;
+
+    const-string/jumbo v0, "CREATE TABLE conversation_inbox ( profile_id TEXT PRIMARY KEY NOT NULL, form_name TEXT,form_email TEXT,description_draft TEXT,description_draft_timestamp TEXT,attachment_draft TEXT,description_type TEXT,archival_text TEXT, reply_text TEXT, persist_message_box INT, since TEXT );"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->y:Ljava/lang/String;
+
+    const-string/jumbo v0, "conversation_id"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->z:Ljava/lang/String;
+
+    const-string/jumbo v0, "body"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->A:Ljava/lang/String;
+
+    const-string/jumbo v0, "author_name"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->B:Ljava/lang/String;
+
+    const-string/jumbo v0, "type"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->C:Ljava/lang/String;
+
+    const-string/jumbo v0, "meta"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->D:Ljava/lang/String;
+
+    const-string/jumbo v0, "md_state"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->E:Ljava/lang/String;
+
+    const-string/jumbo v0, "CREATE TABLE messages ( _id INTEGER PRIMARY KEY AUTOINCREMENT, server_id TEXT, conversation_id TEXT, body TEXT, author_name TEXT, type TEXT, meta TEXT, created_at TEXT, md_state INTEGER  );"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->G:Ljava/lang/String;
+
+    const-string/jumbo v0, "CREATE INDEX SERVER_IDX ON messages(server_id)"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->H:Ljava/lang/String;
+
+    const-string/jumbo v0, "ALTER TABLE conversation_inbox ADD description_type TEXT;"
+
+    iput-object v0, p0, Lcom/helpshift/common/a/e;->I:Ljava/lang/String;
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a()Ljava/util/List;
+    .locals 4
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    const/4 v1, 0x4
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    const/4 v2, 0x0
+
+    iget-object v3, p0, Lcom/helpshift/common/a/e;->F:Ljava/lang/String;
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x1
+
+    iget-object v3, p0, Lcom/helpshift/common/a/e;->y:Ljava/lang/String;
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x2
+
+    iget-object v3, p0, Lcom/helpshift/common/a/e;->G:Ljava/lang/String;
+
+    aput-object v3, v1, v2
+
+    const/4 v2, 0x3
+
+    const-string/jumbo v3, "CREATE INDEX SERVER_IDX ON messages(server_id)"
+
+    aput-object v3, v1, v2
+
+    invoke-static {v1}, Ljava/util/Arrays;->asList([Ljava/lang/Object;)Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-direct {v0, v1}, Ljava/util/ArrayList;-><init>(Ljava/util/Collection;)V
+
+    return-object v0
+.end method
+
+.method public final b()Ljava/util/List;
+    .locals 2
+    .annotation build Landroid/support/annotation/NonNull;
+    .end annotation
+
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "()",
+            "Ljava/util/List",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const-string/jumbo v1, "DROP TABLE IF EXISTS issues"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    const-string/jumbo v1, "DROP TABLE IF EXISTS conversation_inbox"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    const-string/jumbo v1, "DROP TABLE IF EXISTS messages"
+
+    invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
+
+    invoke-virtual {p0}, Lcom/helpshift/common/a/e;->a()Ljava/util/List;
+
+    move-result-object v1
+
+    invoke-interface {v0, v1}, Ljava/util/List;->addAll(Ljava/util/Collection;)Z
+
+    return-object v0
+.end method

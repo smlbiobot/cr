@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Broj zvjezdica kojim ste ocijenili ste našu uslugu: %d</item>
+        <item quantity="one">Ocijenili ste našu uslugu 1 zvjezdicom.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">Broj novih poruka od službe za podršku: %d</item>
+        <item quantity="one">Nova poruka od Službe za podršku</item>
+    </plurals>
+</resources>

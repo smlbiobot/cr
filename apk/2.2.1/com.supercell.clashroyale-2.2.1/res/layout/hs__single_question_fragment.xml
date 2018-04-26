@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/faq_content_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <com.helpshift.support.webkit.CustomWebView android:id="@id/web_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ProgressBar android:id="@id/progress_bar" android:visibility="gone" style="@style/Helpshift.Style.QuestionLoadProgress" />
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/question_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="?hs__separatorColor" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:orientation="horizontal" android:background="?hs__footerPromptBackground" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingRight="@dimen/activity_horizontal_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="48.0dip">
+            <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeSmall" android:textColor="?android:textColorSecondary" android:gravity="start" android:layout_gravity="center_vertical" android:id="@id/question_footer_message" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/hs__mark_yes_no_question" android:layout_weight="1.0" />
+            <com.helpshift.views.HSButton android:layout_gravity="center_vertical" android:id="@id/unhelpful_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__mark_no" style="@style/Helpshift.Style.BorderlessButton" />
+            <com.helpshift.views.HSButton android:layout_gravity="center_vertical" android:id="@id/helpful_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__mark_yes" style="@style/Helpshift.Style.BorderlessButton" />
+            <com.helpshift.views.HSButton android:layout_gravity="center_vertical" android:id="@id/contact_us_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__contact_us_btn" style="@style/Helpshift.Style.BorderlessButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

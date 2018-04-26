@@ -1,0 +1,12 @@
+Name,MetadataType,MetadataPath,EvaluationLocation,PersonallyTargeting,ParameterName,ParameterType,IsRequired,ObjectType,MatchingRuleType
+string,string,string,string,boolean,string,string,boolean,string,string
+ByTag,TargetingMetadata,Tags,SERVER,TRUE,Tag,ENUMERATION,TRUE,Tags,IsInStringList
+ByCountry,InGameMetadata,Country,SERVER,FALSE,Country,LIST,TRUE,STRING,ContainsString
+ByAccountIdModulus,InGameMetadata,AccountIdLow,SERVER,FALSE,Parameters,OBJECT,TRUE,ModuloParams,ModuloMatch
+ByAccountType,InGameMetadata,AccountType,SERVER,FALSE,AccountType,LIST,TRUE,STRING,ContainsString
+ByArenaLevel,InGameMetadata,ArenaLevel,SERVER,FALSE,Low,NUMBER,TRUE,,RangeLow
+,,,,,High,NUMBER,TRUE,,RangeHigh
+ByMaxTrophies,InGameMetadata,MaxScore,SERVER,FALSE,Low,NUMBER,TRUE,,RangeLow
+,,,,,High,NUMBER,TRUE,,RangeHigh
+ByPurchasedDiamonds,InGameMetadata,PurchasedDiamonds,SERVER,FALSE,Low,NUMBER,TRUE,,RangeLow
+,,,,,High,NUMBER,TRUE,,RangeHigh

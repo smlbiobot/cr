@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="hs__issue_description_min_chars">15</integer>
+</resources>

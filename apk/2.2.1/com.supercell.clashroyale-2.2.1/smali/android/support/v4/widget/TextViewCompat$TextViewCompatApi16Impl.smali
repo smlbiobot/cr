@@ -1,0 +1,40 @@
+.class Landroid/support/v4/widget/TextViewCompat$TextViewCompatApi16Impl;
+.super Landroid/support/v4/widget/TextViewCompat$TextViewCompatBaseImpl;
+
+
+# annotations
+.annotation build Landroid/support/annotation/RequiresApi;
+    value = 0x10
+.end annotation
+
+
+# direct methods
+.method constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Landroid/support/v4/widget/TextViewCompat$TextViewCompatBaseImpl;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public getMaxLines(Landroid/widget/TextView;)I
+    .locals 1
+
+    invoke-virtual {p1}, Landroid/widget/TextView;->getMaxLines()I
+
+    move-result v0
+
+    return v0
+.end method
+
+.method public getMinLines(Landroid/widget/TextView;)I
+    .locals 1
+
+    invoke-virtual {p1}, Landroid/widget/TextView;->getMinLines()I
+
+    move-result v0
+
+    return v0
+.end method

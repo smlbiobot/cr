@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeMedium" android:textColor="?android:textColorSecondary" android:gravity="center" android:id="@id/search_result_message" android:padding="@dimen/activity_horizontal_margin_medium" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hs__search_result_message"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

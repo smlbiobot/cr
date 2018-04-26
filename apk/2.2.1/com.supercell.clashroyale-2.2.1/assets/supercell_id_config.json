@@ -1,0 +1,12 @@
+{
+  "Enabled": true,
+  "EnabledCountries": [
+    "NONE"
+  ],
+  "ScFileName": "sc/supercell_id.sc",
+  "Game": "scroll",
+  "PreloadingEnabled":  true,
+  "InternalDomains": [
+    "www.google.com"
+  ]
+}

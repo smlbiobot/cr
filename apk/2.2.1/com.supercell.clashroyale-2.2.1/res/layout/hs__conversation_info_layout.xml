@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:paddingTop="@dimen/activity_vertical_margin_medium" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/issue_publish_id_container" android:paddingLeft="@dimen/activity_horizontal_margin_medium" android:paddingRight="@dimen/activity_horizontal_margin_v_small" android:layout_width="fill_parent" android:layout_height="@dimen/hs__conversation_info_container_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeLarge" android:textColor="?android:textColorPrimary" android:id="@id/issue_publish_id_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hs__conversation_info_issue_id" />
+            <com.helpshift.views.HSTextView android:textSize="@dimen/hs__textSizeMedium" android:textColor="?android:textColorSecondary" android:id="@id/issue_publish_id" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageButton android:id="@id/issue_id_copy_btn" android:background="?selectableItemBackground" android:padding="12.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hs__copy" android:contentDescription="@string/hs__copy" />
+    </LinearLayout>
+    <View android:id="@id/divider" android:layout_marginTop="@dimen/hs__conversation_info_container_height" style="@style/HSDivider" />
+</FrameLayout>

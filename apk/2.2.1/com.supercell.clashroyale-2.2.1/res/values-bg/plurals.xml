@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Вие оценихте обслужването с %d звезди.</item>
+        <item quantity="one">Вие оценихте обслужването с 1 звезда.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d нови съобщения от отдела по поддръжка</item>
+        <item quantity="one">Ново съобщение от Поддръжка</item>
+    </plurals>
+</resources>

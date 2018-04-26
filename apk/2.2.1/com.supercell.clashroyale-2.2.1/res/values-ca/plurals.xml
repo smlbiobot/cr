@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">Has puntuat el servei amb %d estrelles.</item>
+        <item quantity="one">Has puntuat el servei amb una estrella.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">"%d missatges nous del Servei d'Atenció"</item>
+        <item quantity="one">"Nou missatge del Servei d'Atenció"</item>
+    </plurals>
+</resources>

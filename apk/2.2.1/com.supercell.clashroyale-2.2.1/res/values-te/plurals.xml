@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">మీరు సర్వీసుకు %d స్టార్‌లను ఇచ్చారు.</item>
+        <item quantity="one">మీరు సర్వీసుకు 1 స్టార్‌ను ఇచ్చారు.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">%d సపోర్ట్‌ నుండి కొత్త సందేశాలు</item>
+        <item quantity="one">సపోర్ట్‌ నుండి కొత్త సందేశం</item>
+    </plurals>
+</resources>

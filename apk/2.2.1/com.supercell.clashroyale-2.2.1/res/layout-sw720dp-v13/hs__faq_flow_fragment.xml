@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/list_fragment_container" android:layout_width="0.00999999dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+        <View android:id="@id/vertical_divider" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" style="@style/HSDivider" />
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="2.0">
+            <com.helpshift.views.HSTextView android:gravity="center" android:layout_gravity="center" android:id="@id/select_question_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin_medium" android:layout_marginRight="@dimen/activity_horizontal_margin_medium" android:text="@string/hs__select_a_question_message" />
+            <FrameLayout android:id="@id/details_fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/single_question_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

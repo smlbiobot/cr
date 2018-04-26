@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hs__csat_rating_value">
+        <item quantity="other">서비스를 %d점으로 평가하셨습니다.</item>
+        <item quantity="one">서비스를 1점으로 평가하셨습니다.</item>
+    </plurals>
+    <plurals name="hs__notification_content_title">
+        <item quantity="other">고객 지원에서 보낸 새 메시지 %d개</item>
+        <item quantity="one">지원에서 보낸 새 메시지</item>
+    </plurals>
+</resources>
